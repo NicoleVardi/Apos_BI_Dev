@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_MRR", "SSIS_MRR\SSIS_MRR.dtproj", "{BEE081AE-0E45-47D3-8A60-29686F2BF748}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Dims", "SSIS_Dims\SSIS_Dims.dtproj", "{2732EE97-EC4C-4FD2-94A2-80BDE5C98C32}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Config_Tables", "SSIS_Config_Tables\SSIS_Config_Tables.dtproj", "{0A42516C-B118-4085-82A0-F935BB1DFE5A}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Config_Patient_Tables", "SSIS_Config_Patient_Tables\SSIS_Config_Patient_Tables.dtproj", "{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Facts", "SSIS_Facts\SSIS_Facts.dtproj", "{4E2B8065-4A62-4F24-8472-0BE6949628CF}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Reports", "SSIS_Reports\SSIS_Reports.dtproj", "{945669CF-DCC3-4906-A964-DB7E35BA25A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEE081AE-0E45-47D3-8A60-29686F2BF748}.Development|Default.ActiveCfg = Development
+		{BEE081AE-0E45-47D3-8A60-29686F2BF748}.Development|Default.Build.0 = Development
+		{2732EE97-EC4C-4FD2-94A2-80BDE5C98C32}.Development|Default.ActiveCfg = Development
+		{2732EE97-EC4C-4FD2-94A2-80BDE5C98C32}.Development|Default.Build.0 = Development
+		{0A42516C-B118-4085-82A0-F935BB1DFE5A}.Development|Default.ActiveCfg = Development
+		{0A42516C-B118-4085-82A0-F935BB1DFE5A}.Development|Default.Build.0 = Development
+		{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}.Development|Default.ActiveCfg = Development
+		{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}.Development|Default.Build.0 = Development
+		{4E2B8065-4A62-4F24-8472-0BE6949628CF}.Development|Default.ActiveCfg = Development
+		{4E2B8065-4A62-4F24-8472-0BE6949628CF}.Development|Default.Build.0 = Development
+		{945669CF-DCC3-4906-A964-DB7E35BA25A5}.Development|Default.ActiveCfg = Development
+		{945669CF-DCC3-4906-A964-DB7E35BA25A5}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAAF5229-E9B8-4C77-AB3F-F9F199A0D3B7}
+	EndGlobalSection
+EndGlobal
