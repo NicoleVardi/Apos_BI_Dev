@@ -1,0 +1,1689 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0807.1415                               -->
+<workbook original-version='18.1' source-build='2018.1.4 (20181.18.0807.1415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='v_CIO_Clinical_KPIs (DWH)' inline='true' name='federated.1ey8tjw0gjs6jr191dt8r0wm7k8f' version='18.1'>
+      <repository-location id='v_CIO_Clinical_KPIsDWH' path='datasources' revision='3.6' />
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BISRV' name='sqlserver.104pqln0vl8pcx1048uwa1x5bmoo'>
+            <connection authentication='sspi' class='sqlserver' dbname='DWH' minimum-driver-version='SQL Server Native Client 10.0' odbc-native-protocol='yes' one-time-sql='' server='BISRV' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='sqlserver.104pqln0vl8pcx1048uwa1x5bmoo' name='v_CIO_Clinical_KPIs' table='[dbo].[v_CIO_Clinical_KPIs]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>KPI_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KPI_Type]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KPI_Name]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Value</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KPI_Value]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Value</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Questionnaire_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[KPI_Questionnaire_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Questionnaire_Key</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Questionnaire</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[KPI_Questionnaire]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Questionnaire</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Questionnaire_Category_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[KPI_Questionnaire_Category_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Questionnaire_Category_Key</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Questionnaire_Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[KPI_Questionnaire_Category]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Questionnaire_Category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Insurer_Group_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[KPI_Insurer_Group_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Insurer_Group_Key</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Insurer_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KPI_Insurer_Group]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Insurer_Group</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[KPI_Description]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Description</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>318</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Comliant_Score_Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KPI_Comliant_Score_Change]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Comliant_Score_Change</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPI_Comliant_Percent_Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KPI_Comliant_Percent_Change]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>KPI_Comliant_Percent_Change</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinic_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Clinic_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Clinic_Key</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinic_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Clinic_Name]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Clinic_Name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinic_Branch_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Clinic_Branch_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Clinic_Branch_Key</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinic_Branch</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clinic_Branch]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Clinic_Branch</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Territory_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Territory_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Territory_Key</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Territory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Territory]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Territory</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Continent_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Continent_Key</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Activity_Status_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Activity_Status_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Activity_Status_Key</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Activity_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Activity_Status]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Activity_Status</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suitability_Status_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Suitability_Status_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Suitability_Status_Key</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suitability_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Suitability_Status]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Suitability_Status</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Historical_Patient</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Is_Historical_Patient]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Is_Historical_Patient</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pathology_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Pathology_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Pathology_Key</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pathology</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Pathology]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Pathology</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pathology_Area_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Pathology_Area_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Pathology_Area_Key</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pathology_Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pathology_Area]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Pathology_Area</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurer_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Insurer_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Insurer_Key</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Insurer]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Insurer</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PT_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[PT_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>PT_Key</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PT_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PT_Name]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>PT_Name</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>101</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Patient_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Patient_Key</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_ID]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Patient_ID</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Parent_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Parent_ID]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Patient_Parent_ID</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[IC_Date]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>IC_Date</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Visit_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IC_Visit_ID]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>IC_Visit_ID</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visit_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Visit_Date]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Visit_Date</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visit_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Visit_ID]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Visit_ID</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days_from_IC</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Days_from_IC]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Days_from_IC</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Period_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Period_Key</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Number</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Period_Number]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Period_Number</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Period_Name]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Period_Name</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Year_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Period_Year_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Period_Year_Key</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Year_Number</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Period_Year_Number]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Period_Year_Number</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Period_Year]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Period_Year</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IC_Value]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>IC_Value</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visit_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Visit_Value]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Visit_Value</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Change_In_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Change_In_Value]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Change_In_Value</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Change_In_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Change_In_Percent]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Change_In_Percent</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_KPI_Compliant</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Is_KPI_Compliant]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>Is_KPI_Compliant</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Functional_Classification_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[IC_Functional_Classification_Key]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>IC_Functional_Classification_Key</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Functional_Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IC_Functional_Classification]</local-name>
+            <parent-name>[v_CIO_Clinical_KPIs]</parent-name>
+            <remote-alias>IC_Functional_Classification</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Activity Status' datatype='string' name='[Activity_Status]' role='dimension' type='nominal' />
+      <column caption='Activity Status Key' datatype='integer' hidden='true' name='[Activity_Status_Key]' role='dimension' type='ordinal' />
+      <column caption='Avg. Imp. %' datatype='real' default-format='p0.0%' name='[Calculation_752945588971110400]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([Visit_Value]) - AVG([IC_Value])) / AVG([IC_Value])' />
+      </column>
+      <column caption='Avg. Imp. % (WOMAC)' datatype='real' default-format='p0.0%' name='[Calculation_752945588971163649]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_752945588971110400] *-1' />
+      </column>
+      <column caption='Num of Patients' datatype='integer' name='[Calculation_816840403684802561]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Patient_Key])' />
+      </column>
+      <column caption='Change In Percent' datatype='real' default-format='p0.0%' hidden='true' name='[Change_In_Percent]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Avg. Imp. #' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Change_In_Value]' role='measure' type='quantitative' />
+      <column caption='Clinic Branch' datatype='string' name='[Clinic_Branch]' role='dimension' type='nominal' />
+      <column caption='Clinic Branch Key' datatype='integer' hidden='true' name='[Clinic_Branch_Key]' role='dimension' type='ordinal' />
+      <column caption='Clinic Key' datatype='integer' hidden='true' name='[Clinic_Key]' role='dimension' type='ordinal' />
+      <column caption='Clinic Name' datatype='string' name='[Clinic_Name]' role='dimension' type='nominal' />
+      <column caption='Continent Key' datatype='integer' hidden='true' name='[Continent_Key]' role='dimension' type='ordinal' />
+      <column caption='Days from IC' datatype='integer' name='[Days_from_IC]' role='measure' type='quantitative' />
+      <column caption='IC Date' datatype='date' name='[IC_Date]' role='dimension' type='ordinal' />
+      <column caption='IC Functional Classification' datatype='string' name='[IC_Functional_Classification]' role='dimension' type='nominal' />
+      <column caption='IC Functional Classification Key' datatype='integer' hidden='true' name='[IC_Functional_Classification_Key]' role='measure' type='quantitative' />
+      <column caption='IC Value' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Value]' role='measure' type='quantitative' />
+      <column caption='IC Visit ID' datatype='string' name='[IC_Visit_ID]' role='dimension' type='nominal' />
+      <column caption='Insurer Key' datatype='integer' hidden='true' name='[Insurer_Key]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Is Historical Patient' datatype='integer' name='[Is_Historical_Patient]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' caption='KPI Population' datatype='integer' name='[Is_KPI_Compliant]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='Non Compliant' />
+          <alias key='1' value='Compliant' />
+        </aliases>
+      </column>
+      <column aggregation='Min' caption='KPI Comliant Percent' datatype='real' default-format='p0%' name='[KPI_Comliant_Percent_Change]' role='measure' type='quantitative' />
+      <column aggregation='Min' caption='KPI Comliant Score' datatype='real' default-format='n#,##0;-#,##0' name='[KPI_Comliant_Score_Change]' role='measure' type='quantitative' />
+      <column caption='KPI Description' datatype='string' name='[KPI_Description]' role='dimension' type='nominal' />
+      <column caption='KPI Insurer Group' datatype='string' name='[KPI_Insurer_Group]' role='dimension' type='nominal' />
+      <column caption='KPI Insurer Group Key' datatype='integer' hidden='true' name='[KPI_Insurer_Group_Key]' role='dimension' type='ordinal' />
+      <column caption='KPI Name' datatype='string' name='[KPI_Name]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Gait Velocity MCID&quot;' value='Gait' />
+          <alias key='&quot;SF-36 MCID&quot;' value='SF-36' />
+          <alias key='&quot;WOMAC MCID&quot;' value='WOMAC' />
+          <alias key='&quot;WOMAC MCID - Function&quot;' value='WOMAC - Function' />
+          <alias key='&quot;WOMAC MCID - Pain&quot;' value='WOMAC - Pain' />
+          <alias key='&quot;WOMAC MCID - Total&quot;' value='WOMAC - Total' />
+        </aliases>
+      </column>
+      <column caption='KPI Questionnaire' datatype='string' name='[KPI_Questionnaire]' role='dimension' type='nominal' />
+      <column caption='KPI Questionnaire Category' datatype='string' name='[KPI_Questionnaire_Category]' role='dimension' type='nominal' />
+      <column caption='KPI Questionnaire Category Key' datatype='integer' hidden='true' name='[KPI_Questionnaire_Category_Key]' role='dimension' type='ordinal' />
+      <column caption='KPI Questionnaire Key' datatype='integer' hidden='true' name='[KPI_Questionnaire_Key]' role='dimension' type='ordinal' />
+      <column caption='KPI Type' datatype='string' name='[KPI_Type]' role='dimension' type='nominal' />
+      <column aggregation='Min' caption='KPI Value' datatype='string' name='[KPI_Value]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='PT Key' datatype='integer' hidden='true' name='[PT_Key]' role='dimension' type='ordinal' />
+      <column caption='PT Name' datatype='string' name='[PT_Name]' role='dimension' type='nominal' />
+      <column caption='Pathology Area' datatype='string' name='[Pathology_Area]' role='dimension' type='nominal' />
+      <column caption='Pathology Area Key' datatype='integer' hidden='true' name='[Pathology_Area_Key]' role='dimension' type='ordinal' />
+      <column caption='Pathology Key' datatype='integer' hidden='true' name='[Pathology_Key]' role='dimension' type='ordinal' />
+      <column caption='Patient ID' datatype='string' name='[Patient_ID]' role='dimension' type='nominal' />
+      <column caption='Patient Key' datatype='integer' name='[Patient_Key]' role='dimension' type='ordinal' />
+      <column caption='Patient Parent ID' datatype='string' name='[Patient_Parent_ID]' role='dimension' type='nominal' />
+      <column caption='Period Key' datatype='integer' hidden='true' name='[Period_Key]' role='dimension' type='ordinal' />
+      <column caption='Period Name' datatype='string' name='[Period_Name]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Period Number' datatype='integer' hidden='true' name='[Period_Number]' role='dimension' type='ordinal' />
+      <column caption='Period Year' datatype='string' name='[Period_Year]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Period Year Key' datatype='integer' hidden='true' name='[Period_Year_Key]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Period Year Number' datatype='integer' hidden='true' name='[Period_Year_Number]' role='dimension' type='ordinal' />
+      <column caption='Suitability Status' datatype='string' name='[Suitability_Status]' role='dimension' type='nominal' />
+      <column caption='Suitability Status Key' datatype='integer' hidden='true' name='[Suitability_Status_Key]' role='dimension' type='ordinal' />
+      <column caption='Teritorry Key' datatype='integer' hidden='true' name='[Teritorry_Key]' role='dimension' type='ordinal' />
+      <column caption='Territory Key' datatype='integer' hidden='true' name='[Territory_Key]' role='measure' type='quantitative' />
+      <column caption='Visit Date' datatype='date' name='[Visit_Date]' role='dimension' type='ordinal' />
+      <column caption='Visit ID' datatype='string' name='[Visit_ID]' role='dimension' type='nominal' />
+      <column caption='Visit Value' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Visit_Value]' role='measure' type='quantitative' />
+      <column-instance column='[Activity_Status]' derivation='None' name='[none:Activity_Status:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='Clinic'>
+          <field>[Continent]</field>
+          <field>[Territory]</field>
+          <field>[Clinic_Branch]</field>
+          <field>[Clinic_Name]</field>
+        </drill-path>
+        <drill-path name='KPI'>
+          <field>[KPI_Type]</field>
+          <field>[KPI_Name]</field>
+          <field>[KPI_Questionnaire]</field>
+          <field>[KPI_Questionnaire_Category]</field>
+        </drill-path>
+        <drill-path name='Pathology'>
+          <field>[Pathology_Area]</field>
+          <field>[Pathology]</field>
+        </drill-path>
+        <drill-path name='Patient ID'>
+          <field>[Patient_Parent_ID]</field>
+          <field>[Patient_ID]</field>
+          <field>[Patient_Key]</field>
+        </drill-path>
+        <drill-path name='Period'>
+          <field>[Period_Year]</field>
+          <field>[Period_Name]</field>
+        </drill-path>
+      </drill-paths>
+      <folder name='KPI' role='dimensions'>
+        <folder-item name='[Is_KPI_Compliant]' type='field' />
+        <folder-item name='[KPI_Description]' type='field' />
+        <folder-item name='[KPI_Insurer_Group]' type='field' />
+        <folder-item name='[KPI_Insurer_Group_Key]' type='field' />
+        <folder-item name='[KPI_Questionnaire_Category_Key]' type='field' />
+        <folder-item name='[KPI_Questionnaire_Key]' type='field' />
+        <folder-item name='[KPI_Value]' type='field' />
+        <folder-item name='KPI' type='drillpath' />
+      </folder>
+      <folder name='Patient Current Data' role='dimensions'>
+        <folder-item name='[Activity_Status]' type='field' />
+        <folder-item name='[Activity_Status_Key]' type='field' />
+        <folder-item name='[IC_Functional_Classification]' type='field' />
+        <folder-item name='[Insurer]' type='field' />
+        <folder-item name='[Insurer_Key]' type='field' />
+        <folder-item name='[Is_Historical_Patient]' type='field' />
+        <folder-item name='[PT_Key]' type='field' />
+        <folder-item name='[PT_Name]' type='field' />
+        <folder-item name='[Pathology_Area_Key]' type='field' />
+        <folder-item name='[Pathology_Key]' type='field' />
+        <folder-item name='[Suitability_Status]' type='field' />
+        <folder-item name='[Suitability_Status_Key]' type='field' />
+        <folder-item name='Pathology' type='drillpath' />
+        <folder-item name='Patient ID' type='drillpath' />
+      </folder>
+      <folder name='Periods' role='dimensions'>
+        <folder-item name='[Period_Key]' type='field' />
+        <folder-item name='[Period_Number]' type='field' />
+        <folder-item name='[Period_Year_Key]' type='field' />
+        <folder-item name='[Period_Year_Number]' type='field' />
+        <folder-item name='Period' type='drillpath' />
+      </folder>
+      <extract count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI_Dev/Tableau/Data Sources/v_CIO_Clinical_KPIs (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2018 11:47:19 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='1006882' timestamp-start='2018-08-15 11:47:19.500' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>KPI_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KPI_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KPI_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KPI_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Questionnaire</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KPI_Questionnaire]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Questionnaire</remote-alias>
+              <ordinal>3</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Questionnaire_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KPI_Questionnaire_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Questionnaire_Category</remote-alias>
+              <ordinal>4</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Insurer_Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KPI_Insurer_Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Insurer_Group</remote-alias>
+              <ordinal>5</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KPI_Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Description</remote-alias>
+              <ordinal>6</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Comliant_Score_Change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[KPI_Comliant_Score_Change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Comliant_Score_Change</remote-alias>
+              <ordinal>7</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KPI_Comliant_Percent_Change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[KPI_Comliant_Percent_Change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KPI_Comliant_Percent_Change</remote-alias>
+              <ordinal>8</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Clinic_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Clinic_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Clinic_Name</remote-alias>
+              <ordinal>9</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Clinic_Branch</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Clinic_Branch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Clinic_Branch</remote-alias>
+              <ordinal>10</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Territory</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Territory]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Territory</remote-alias>
+              <ordinal>11</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Continent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Continent</remote-alias>
+              <ordinal>12</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Activity_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Activity_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Activity_Status</remote-alias>
+              <ordinal>13</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Suitability_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Suitability_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Suitability_Status</remote-alias>
+              <ordinal>14</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is_Historical_Patient</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Is_Historical_Patient]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is_Historical_Patient</remote-alias>
+              <ordinal>15</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pathology</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pathology]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pathology</remote-alias>
+              <ordinal>16</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pathology_Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pathology_Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pathology_Area</remote-alias>
+              <ordinal>17</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Insurer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Insurer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Insurer</remote-alias>
+              <ordinal>18</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PT_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PT_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PT_Name</remote-alias>
+              <ordinal>19</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient_Key</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Patient_Key]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_Key</remote-alias>
+              <ordinal>20</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9149</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Patient_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_ID</remote-alias>
+              <ordinal>21</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9149</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient_Parent_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Patient_Parent_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_Parent_ID</remote-alias>
+              <ordinal>22</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9149</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[IC_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Date</remote-alias>
+              <ordinal>23</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1439</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Visit_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IC_Visit_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Visit_ID</remote-alias>
+              <ordinal>24</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9149</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visit_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Visit_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visit_Date</remote-alias>
+              <ordinal>25</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1851</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visit_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Visit_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visit_ID</remote-alias>
+              <ordinal>26</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61420</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Days_from_IC</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Days_from_IC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Days_from_IC</remote-alias>
+              <ordinal>27</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>324</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Period_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Period_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Period_Name</remote-alias>
+              <ordinal>28</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Period_Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Period_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Period_Year</remote-alias>
+              <ordinal>29</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IC_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Value</remote-alias>
+              <ordinal>30</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2538</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visit_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Visit_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visit_Value</remote-alias>
+              <ordinal>31</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2988</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Change_In_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Change_In_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Change_In_Value</remote-alias>
+              <ordinal>32</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>598</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Change_In_Percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Change_In_Percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Change_In_Percent</remote-alias>
+              <ordinal>33</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>638</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is_KPI_Compliant</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Is_KPI_Compliant]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is_KPI_Compliant</remote-alias>
+              <ordinal>34</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Functional_Classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IC_Functional_Classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Functional_Classification</remote-alias>
+              <ordinal>35</ordinal>
+              <family>v_CIO_Clinical_KPIs</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.683879' measure-ordering='alphabetic' measure-percentage='0.316121' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Activity_Status:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Active&quot;</bucket>
+            <bucket>&quot;Inactive&quot;</bucket>
+            <bucket>&quot;Changed Pathology&quot;</bucket>
+            <bucket>&quot;Discharged&quot;</bucket>
+            <bucket>&quot;Dropped Out&quot;</bucket>
+            <bucket>&quot;N\\A&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

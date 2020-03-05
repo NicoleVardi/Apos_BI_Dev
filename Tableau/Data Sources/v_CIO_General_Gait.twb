@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20181.18.0615.1128                               -->
-<workbook original-version='18.1' source-build='2018.1.2 (20181.18.0615.1128)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20181.18.0807.1415                               -->
+<workbook original-version='18.1' source-build='2018.1.4 (20181.18.0807.1415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <SortTagCleanup />
   </document-format-change-manifest>
@@ -11,7 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_CIO_General_Gait (DWH)' inline='true' name='federated.1ak7q2v0hdwkk819gc0zh1ptkuet' version='18.1'>
-      <repository-location id='v_CIO_General_GaitDWH' path='datasources' revision='5.0' />
+      <repository-location id='v_CIO_General_GaitDWH' path='datasources' revision='5.6' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.11f0woy1pi5hdd1c7h8o40au917c'>
@@ -407,12 +407,31 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
+            <remote-name>Patient_External_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Patient_External_ID]</local-name>
+            <parent-name>[v_CIO_General_Gait]</parent-name>
+            <remote-alias>Patient_External_ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
             <remote-name>IC_Date</remote-name>
             <remote-type>7</remote-type>
             <local-name>[IC_Date]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Date</remote-alias>
-            <ordinal>23</ordinal>
+            <ordinal>24</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -428,7 +447,7 @@
             <local-name>[IC_Visit_ID]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Visit_ID</remote-alias>
-            <ordinal>24</ordinal>
+            <ordinal>25</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -447,7 +466,7 @@
             <local-name>[Visit_Date]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Visit_Date</remote-alias>
-            <ordinal>25</ordinal>
+            <ordinal>26</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -463,7 +482,7 @@
             <local-name>[Visit_ID]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Visit_ID</remote-alias>
-            <ordinal>26</ordinal>
+            <ordinal>27</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -482,7 +501,7 @@
             <local-name>[Days_from_IC]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Days_from_IC</remote-alias>
-            <ordinal>27</ordinal>
+            <ordinal>28</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -498,7 +517,7 @@
             <local-name>[Period_Key]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Period_Key</remote-alias>
-            <ordinal>28</ordinal>
+            <ordinal>29</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -514,7 +533,7 @@
             <local-name>[Period_Number]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Period_Number</remote-alias>
-            <ordinal>29</ordinal>
+            <ordinal>30</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -530,7 +549,7 @@
             <local-name>[Period_Name]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Period_Name</remote-alias>
-            <ordinal>30</ordinal>
+            <ordinal>31</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -549,7 +568,7 @@
             <local-name>[Period_Year_Key]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Period_Year_Key</remote-alias>
-            <ordinal>31</ordinal>
+            <ordinal>32</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -565,7 +584,7 @@
             <local-name>[Period_Year_Number]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Period_Year_Number</remote-alias>
-            <ordinal>32</ordinal>
+            <ordinal>33</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -581,7 +600,7 @@
             <local-name>[Period_Year]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Period_Year</remote-alias>
-            <ordinal>33</ordinal>
+            <ordinal>34</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -600,7 +619,7 @@
             <local-name>[IC_Left_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Left_SLS</remote-alias>
-            <ordinal>34</ordinal>
+            <ordinal>35</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -616,7 +635,7 @@
             <local-name>[Left_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Left_SLS</remote-alias>
-            <ordinal>35</ordinal>
+            <ordinal>36</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -632,7 +651,7 @@
             <local-name>[Left_SLS_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Left_SLS_Change</remote-alias>
-            <ordinal>36</ordinal>
+            <ordinal>37</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -648,7 +667,7 @@
             <local-name>[Left_SLS_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Left_SLS_Change_Percent</remote-alias>
-            <ordinal>37</ordinal>
+            <ordinal>38</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -664,7 +683,7 @@
             <local-name>[IC_Right_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Right_SLS</remote-alias>
-            <ordinal>38</ordinal>
+            <ordinal>39</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -680,7 +699,7 @@
             <local-name>[Right_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Right_SLS</remote-alias>
-            <ordinal>39</ordinal>
+            <ordinal>40</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -696,7 +715,7 @@
             <local-name>[Right_SLS_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Right_SLS_Change</remote-alias>
-            <ordinal>40</ordinal>
+            <ordinal>41</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -712,7 +731,7 @@
             <local-name>[Right_SLS_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Right_SLS_Change_Percent</remote-alias>
-            <ordinal>41</ordinal>
+            <ordinal>42</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -728,7 +747,7 @@
             <local-name>[IC_Less_Symptomatic_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Less_Symptomatic_SLS</remote-alias>
-            <ordinal>42</ordinal>
+            <ordinal>43</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -744,7 +763,7 @@
             <local-name>[Less_Symptomatic_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Less_Symptomatic_SLS</remote-alias>
-            <ordinal>43</ordinal>
+            <ordinal>44</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -760,7 +779,7 @@
             <local-name>[Less_Symptomatic_SLS_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Less_Symptomatic_SLS_Change</remote-alias>
-            <ordinal>44</ordinal>
+            <ordinal>45</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -776,7 +795,7 @@
             <local-name>[Less_Symptomatic_SLS_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Less_Symptomatic_SLS_Change_Percent</remote-alias>
-            <ordinal>45</ordinal>
+            <ordinal>46</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -792,7 +811,7 @@
             <local-name>[IC_More_Symptomatic_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_More_Symptomatic_SLS</remote-alias>
-            <ordinal>46</ordinal>
+            <ordinal>47</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -808,7 +827,7 @@
             <local-name>[More_Symptomatic_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>More_Symptomatic_SLS</remote-alias>
-            <ordinal>47</ordinal>
+            <ordinal>48</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -824,7 +843,7 @@
             <local-name>[More_Symptomatic_SLS_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>More_Symptomatic_SLS_Change</remote-alias>
-            <ordinal>48</ordinal>
+            <ordinal>49</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -840,7 +859,7 @@
             <local-name>[More_Symptomatic_SLS_Change_Pecent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>More_Symptomatic_SLS_Change_Pecent</remote-alias>
-            <ordinal>49</ordinal>
+            <ordinal>50</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -856,7 +875,7 @@
             <local-name>[IC_Left_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Left_Step_Length</remote-alias>
-            <ordinal>50</ordinal>
+            <ordinal>51</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -872,7 +891,7 @@
             <local-name>[Left_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Left_Step_Length</remote-alias>
-            <ordinal>51</ordinal>
+            <ordinal>52</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -888,7 +907,7 @@
             <local-name>[Left_Step_Length_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Left_Step_Length_Change</remote-alias>
-            <ordinal>52</ordinal>
+            <ordinal>53</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -904,7 +923,7 @@
             <local-name>[Left_Step_Length_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Left_Step_Length_Change_Percent</remote-alias>
-            <ordinal>53</ordinal>
+            <ordinal>54</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -920,7 +939,7 @@
             <local-name>[IC_Right_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Right_Step_Length</remote-alias>
-            <ordinal>54</ordinal>
+            <ordinal>55</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -936,7 +955,7 @@
             <local-name>[Right_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Right_Step_Length</remote-alias>
-            <ordinal>55</ordinal>
+            <ordinal>56</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -952,7 +971,7 @@
             <local-name>[Right_Step_Length_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Right_Step_Length_Change</remote-alias>
-            <ordinal>56</ordinal>
+            <ordinal>57</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -968,7 +987,7 @@
             <local-name>[Right_Step_Length_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Right_Step_Length_Change_Percent</remote-alias>
-            <ordinal>57</ordinal>
+            <ordinal>58</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -984,7 +1003,7 @@
             <local-name>[IC_Less_Symptomatic_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Less_Symptomatic_Step_Length</remote-alias>
-            <ordinal>58</ordinal>
+            <ordinal>59</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1000,7 +1019,7 @@
             <local-name>[Less_Symptomatic_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Less_Symptomatic_Step_Length</remote-alias>
-            <ordinal>59</ordinal>
+            <ordinal>60</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1016,7 +1035,7 @@
             <local-name>[Less_Symptomatic_Step_Length_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Less_Symptomatic_Step_Length_Change</remote-alias>
-            <ordinal>60</ordinal>
+            <ordinal>61</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1032,7 +1051,7 @@
             <local-name>[Less_Symptomatic_Step_Length_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Less_Symptomatic_Step_Length_Change_Percent</remote-alias>
-            <ordinal>61</ordinal>
+            <ordinal>62</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1048,7 +1067,7 @@
             <local-name>[IC_More_Symptomatic_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_More_Symptomatic_Step_Length</remote-alias>
-            <ordinal>62</ordinal>
+            <ordinal>63</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1064,7 +1083,7 @@
             <local-name>[More_Symptomatic_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>More_Symptomatic_Step_Length</remote-alias>
-            <ordinal>63</ordinal>
+            <ordinal>64</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1080,7 +1099,7 @@
             <local-name>[More_Symptomatic_Step_Length_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>More_Symptomatic_Step_Length_Change</remote-alias>
-            <ordinal>64</ordinal>
+            <ordinal>65</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1096,7 +1115,7 @@
             <local-name>[More_Symptomatic_Step_Length_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>More_Symptomatic_Step_Length_Change_Percent</remote-alias>
-            <ordinal>65</ordinal>
+            <ordinal>66</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1112,7 +1131,7 @@
             <local-name>[IC_Velocity]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Velocity</remote-alias>
-            <ordinal>66</ordinal>
+            <ordinal>67</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1128,7 +1147,7 @@
             <local-name>[Velocity]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Velocity</remote-alias>
-            <ordinal>67</ordinal>
+            <ordinal>68</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1144,7 +1163,7 @@
             <local-name>[Velocity_Change]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Velocity_Change</remote-alias>
-            <ordinal>68</ordinal>
+            <ordinal>69</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1160,7 +1179,7 @@
             <local-name>[Velocity_Change_Percent]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Velocity_Change_Percent</remote-alias>
-            <ordinal>69</ordinal>
+            <ordinal>70</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1176,7 +1195,7 @@
             <local-name>[IC_FC_Key]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_FC_Key</remote-alias>
-            <ordinal>70</ordinal>
+            <ordinal>71</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -1192,7 +1211,7 @@
             <local-name>[IC_Functional_Classification]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Functional_Classification</remote-alias>
-            <ordinal>71</ordinal>
+            <ordinal>72</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -1211,7 +1230,7 @@
             <local-name>[FC_Grade_Key]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>FC_Grade_Key</remote-alias>
-            <ordinal>72</ordinal>
+            <ordinal>73</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -1227,7 +1246,7 @@
             <local-name>[Visit_Functional_Classification]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Visit_Functional_Classification</remote-alias>
-            <ordinal>73</ordinal>
+            <ordinal>74</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -1246,7 +1265,7 @@
             <local-name>[Min_Normal_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Min_Normal_SLS</remote-alias>
-            <ordinal>74</ordinal>
+            <ordinal>75</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1262,7 +1281,7 @@
             <local-name>[Max_Normal_SLS]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Max_Normal_SLS</remote-alias>
-            <ordinal>75</ordinal>
+            <ordinal>76</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1278,7 +1297,7 @@
             <local-name>[Min_Normal_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Min_Normal_Step_Length</remote-alias>
-            <ordinal>76</ordinal>
+            <ordinal>77</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1294,7 +1313,7 @@
             <local-name>[Max_Normal_Step_Length]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Max_Normal_Step_Length</remote-alias>
-            <ordinal>77</ordinal>
+            <ordinal>78</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1310,7 +1329,7 @@
             <local-name>[Min_Normal_Velocity]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Min_Normal_Velocity</remote-alias>
-            <ordinal>78</ordinal>
+            <ordinal>79</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1326,7 +1345,7 @@
             <local-name>[Max_Normal_Velocity]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Max_Normal_Velocity</remote-alias>
-            <ordinal>79</ordinal>
+            <ordinal>80</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1342,7 +1361,7 @@
             <local-name>[Is_First_Year]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Is_First_Year</remote-alias>
-            <ordinal>80</ordinal>
+            <ordinal>81</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -1358,7 +1377,7 @@
             <local-name>[Is_Second_Year]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Is_Second_Year</remote-alias>
-            <ordinal>81</ordinal>
+            <ordinal>82</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -1374,7 +1393,7 @@
             <local-name>[Is_Third_Year]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>Is_Third_Year</remote-alias>
-            <ordinal>82</ordinal>
+            <ordinal>83</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -1390,7 +1409,7 @@
             <local-name>[IC_Pain_Level]</local-name>
             <parent-name>[v_CIO_General_Gait]</parent-name>
             <remote-alias>IC_Pain_Level</remote-alias>
-            <ordinal>83</ordinal>
+            <ordinal>84</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1512,6 +1531,7 @@
       <column caption='Pathology Area' datatype='string' name='[Pathology_Area]' role='dimension' type='nominal' />
       <column caption='Pathology Area Key' datatype='integer' hidden='true' name='[Pathology_Area_Key]' role='dimension' type='ordinal' />
       <column caption='Pathology Key' datatype='integer' hidden='true' name='[Pathology_Key]' role='dimension' type='ordinal' />
+      <column caption='Patient External ID' datatype='string' name='[Patient_External_ID]' role='dimension' type='nominal' />
       <column caption='Patient ID' datatype='string' name='[Patient_ID]' role='dimension' type='nominal' />
       <column caption='Patient Key' datatype='integer' name='[Patient_Key]' role='dimension' type='ordinal' />
       <column caption='Patient Parent ID' datatype='string' name='[Patient_Parent_ID]' role='dimension' type='nominal' />
@@ -1564,6 +1584,7 @@
         <drill-path name='Patient ID'>
           <field>[Patient_Parent_ID]</field>
           <field>[Patient_ID]</field>
+          <field>[Patient_External_ID]</field>
           <field>[Patient_Key]</field>
         </drill-path>
       </drill-paths>
@@ -1657,8 +1678,8 @@
         <folder-item name='[Velocity_Change]' type='field' />
         <folder-item name='[Velocity_Change_Percent]' type='field' />
       </folder>
-      <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Gait (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2018 02:56:34 PM' username='tableau_internal_user'>
+      <extract count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI_Dev/Tableau/Data Sources/v_CIO_General_Gait (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2018 02:56:34 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh increment-key='' incremental-updates='false'>
             <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='182577' timestamp-start='2018-08-15 14:56:34.053' />
@@ -2477,7 +2498,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.606258' group-percentage='0.0938722' measure-ordering='alphabetic' measure-percentage='0.29987' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.533929' group-percentage='0.0910714' measure-ordering='alphabetic' measure-percentage='0.375' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

@@ -16,17 +16,17 @@
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{8c5777ec-5073-45f8-8138-dd305e911507}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">SSIS_Dims</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
           </SSIS:Property>
           <SSIS:Property SSIS:Name="CreationDate">2018-06-23T14:19:07.636162+01:00</SSIS:Property>
           <SSIS:Property SSIS:Name="CreatorName">APOSTHERAPY\nicole</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorComputerName">BISRV-DEV</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorComputerName">BISRV</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAACAAAAAAADZgAAwAAAABAAAABwVqU6JBaApZLzD8zUZ47MAAAAAASAAACgAAAAEAAAAM4R5Z0B9ThVZXlzzUd7l22IAAAAZCu/qHhSfEq/J/q7TX3WMTdt+/TbU+PqAkT8WdYWmn+dnvZJlSaJRvB6np0R3p3wCZgeN3Pgdq1OfwFeVyOEl+6b/mlggGhzcpTqoI397MRTOYK8LJq3rNPaKzXnV2hmXbh+Rv4JMSIpmDrrpt9MKJGYecCB/AFTpOAqD3ckXkduFt22aymN2hQAAAClVWlAGVJnDrXaXkBqSWUIZx4LRA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOeMf093U5UqTrhbWriyzngAAAAACAAAAAAADZgAAwAAAABAAAADyJrkQ7vwNO4fmdB4wlAwnAAAAAASAAACgAAAAEAAAALgZncS9Qd3FVSgj2GhkKryIAAAAYe5rMPKh6RSLKCw8Vgq5F6WoTGVEwyDkmpWocEmMJ7nN/7mN8ajxc4lKo2Kor08/sN4uW/S8dBrV5Kchv39RND6oMr4P2XV6ldQrcO8cdngVzpB/l+HL3D22btNGjvwOaLGGt9HRVieC7ENppWdHCjVK3xWOQzxaDs/8fmzZEsMUoU2OLvoNgBQAAAB0DfS4skhy4R6KRpqWATxNr6VQ8g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Dims</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">324</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">372</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D1FF1299-2B45-42BB-9E38-9EC5A12C7C06}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{54940CFE-DA35-48A3-82B4-A67E52FBBF0C}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -107,7 +107,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BISRV-DEV</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">BISRV</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -181,7 +181,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BISRV-DEV</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">BISRV</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -255,7 +255,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BISRV-DEV</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">BISRV</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -329,7 +329,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BISRV-DEV</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">BISRV</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

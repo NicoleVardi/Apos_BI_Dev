@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20181.18.0615.1128                               -->
-<workbook original-version='18.1' source-build='2018.1.2 (20181.18.0615.1128)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20181.18.0807.1415                               -->
+<workbook original-version='18.1' source-build='2018.1.4 (20181.18.0807.1415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <SortTagCleanup />
   </document-format-change-manifest>
@@ -11,7 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_Operational_KPIs_Patient_Compliance (DWH)' inline='true' name='federated.1hgm7xk1xlkvwx1b4u6600icqp9z' version='18.1'>
-      <repository-location id='v_Operational_KPIs_Patient_ComplianceDWH' path='datasources' revision='1.8' />
+      <repository-location id='v_Operational_KPIs_Patient_ComplianceDWH' path='datasources' revision='2.8' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.1mcyvm71k9ca8n1au9avs08s1zqr'>
@@ -476,12 +476,31 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
+            <remote-name>Patient_External_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Patient_External_ID]</local-name>
+            <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
+            <remote-alias>Patient_External_ID</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
             <remote-name>IC_Date</remote-name>
             <remote-type>7</remote-type>
             <local-name>[IC_Date]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>IC_Date</remote-alias>
-            <ordinal>27</ordinal>
+            <ordinal>28</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -497,7 +516,7 @@
             <local-name>[IC_Visit_ID]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>IC_Visit_ID</remote-alias>
-            <ordinal>28</ordinal>
+            <ordinal>29</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -516,7 +535,7 @@
             <local-name>[Visit_Date]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Visit_Date</remote-alias>
-            <ordinal>29</ordinal>
+            <ordinal>30</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -532,7 +551,7 @@
             <local-name>[Visit_ID]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Visit_ID</remote-alias>
-            <ordinal>30</ordinal>
+            <ordinal>31</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -551,7 +570,7 @@
             <local-name>[Days_from_IC]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Days_from_IC</remote-alias>
-            <ordinal>31</ordinal>
+            <ordinal>32</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -567,7 +586,7 @@
             <local-name>[Discharge_Date]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Discharge_Date</remote-alias>
-            <ordinal>32</ordinal>
+            <ordinal>33</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -583,7 +602,7 @@
             <local-name>[Period_Key]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Period_Key</remote-alias>
-            <ordinal>33</ordinal>
+            <ordinal>34</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -599,7 +618,7 @@
             <local-name>[Period_Number]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Period_Number</remote-alias>
-            <ordinal>34</ordinal>
+            <ordinal>35</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -615,7 +634,7 @@
             <local-name>[Period_Name]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Period_Name</remote-alias>
-            <ordinal>35</ordinal>
+            <ordinal>36</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -634,7 +653,7 @@
             <local-name>[Period_Year_Key]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Period_Year_Key</remote-alias>
-            <ordinal>36</ordinal>
+            <ordinal>37</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -650,7 +669,7 @@
             <local-name>[Period_Year_Number]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Period_Year_Number</remote-alias>
-            <ordinal>37</ordinal>
+            <ordinal>38</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -666,7 +685,7 @@
             <local-name>[Period_Year]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Period_Year</remote-alias>
-            <ordinal>38</ordinal>
+            <ordinal>39</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -685,7 +704,7 @@
             <local-name>[Is_Compliant]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Is_Compliant</remote-alias>
-            <ordinal>39</ordinal>
+            <ordinal>40</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -701,7 +720,7 @@
             <local-name>[Previous_Visit_ID]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Previous_Visit_ID</remote-alias>
-            <ordinal>40</ordinal>
+            <ordinal>41</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -720,7 +739,7 @@
             <local-name>[Previous_Visit_Date]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Previous_Visit_Date</remote-alias>
-            <ordinal>41</ordinal>
+            <ordinal>42</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -736,7 +755,7 @@
             <local-name>[Days_from_Previous_Visit]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Days_from_Previous_Visit</remote-alias>
-            <ordinal>42</ordinal>
+            <ordinal>43</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -752,11 +771,11 @@
             <local-name>[Compliance_Type]</local-name>
             <parent-name>[v_Operational_KPIs_Patient_Compliance]</parent-name>
             <remote-alias>Compliance_Type</remote-alias>
-            <ordinal>43</ordinal>
+            <ordinal>44</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>12</width>
-            <contains-null>false</contains-null>
+            <width>50</width>
+            <contains-null>true</contains-null>
             <padded-semantics>true</padded-semantics>
             <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
@@ -809,6 +828,7 @@
       <column caption='Pathology Area' datatype='string' name='[Pathology_Area]' role='dimension' type='nominal' />
       <column caption='Pathology Area Key' datatype='integer' hidden='true' name='[Pathology_Area_Key]' role='dimension' type='ordinal' />
       <column caption='Pathology Key' datatype='integer' hidden='true' name='[Pathology_Key]' role='dimension' type='ordinal' />
+      <column caption='Patient External ID' datatype='string' name='[Patient_External_ID]' role='dimension' type='nominal' />
       <column caption='Patient ID' datatype='string' name='[Patient_ID]' role='dimension' type='nominal' />
       <column caption='Patient Key' datatype='integer' name='[Patient_Key]' role='dimension' type='ordinal' />
       <column caption='Patient Parent ID' datatype='string' name='[Patient_Parent_ID]' role='dimension' type='nominal' />
@@ -853,6 +873,7 @@
         <drill-path name='Patient ID'>
           <field>[Patient_Parent_ID]</field>
           <field>[Patient_ID]</field>
+          <field>[Patient_External_ID]</field>
           <field>[Patient_Key]</field>
         </drill-path>
       </drill-paths>
@@ -870,7 +891,7 @@
         <folder-item name='[Period_Year_Number]' type='field' />
         <folder-item name='KPI Period' type='drillpath' />
       </folder>
-      <layout dim-ordering='alphabetic' dim-percentage='0.725724' measure-ordering='alphabetic' measure-percentage='0.274276' show-aliased-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.739353' measure-ordering='alphabetic' measure-percentage='0.260647' show-aliased-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

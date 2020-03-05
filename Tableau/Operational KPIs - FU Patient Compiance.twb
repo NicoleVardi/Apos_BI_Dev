@@ -6,14 +6,14 @@
     <CascadingFilters />
     <SortTagCleanup />
   </document-format-change-manifest>
-  <repository-location id='PatientCompiance-FollowUpMeetings' path='/t/apostherapy/workbooks' revision='2.5' site='apostherapy' />
+  <repository-location id='PatientCompiance-FollowUpMeetings' path='/t/apostherapy/workbooks' revision='2.7' site='apostherapy' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
     <datasource caption='v_Operational_KPIs_Patient_Compliance (DWH)' inline='true' name='sqlproxy.1dqwtee1xbo57c1377x1o1637e7l' version='18.1'>
-      <repository-location derived-from='/datasources/v_Operational_KPIs_Patient_ComplianceDWH?rev=1.7' id='v_Operational_KPIs_Patient_ComplianceDWH' path='/t/apostherapy/datasources' revision='1.8' site='apostherapy' />
+      <repository-location derived-from='/datasources/v_Operational_KPIs_Patient_ComplianceDWH?rev=1.8' id='v_Operational_KPIs_Patient_ComplianceDWH' path='/t/apostherapy/datasources' revision='2.0' site='apostherapy' />
       <connection channel='https' class='sqlproxy' dbname='v_Operational_KPIs_Patient_ComplianceDWH' directory='/dataserver' port='443' server='eu-west-1a.online.tableau.com' server-oauth='' username='' workgroup-auth-mode='prompt'>
         <relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <calculations>
@@ -668,11 +668,11 @@
               <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
               <attribute datatype='integer' name='charset'>0</attribute>
               <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
-              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;v_Operational_KPIs_Patient_Compliance (DWH)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://eu-west-1a.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;document-format-change-manifest&gt;&#10;    &lt;SortTagCleanup /&gt;&#10;  &lt;/document-format-change-manifest&gt;&#10;  &lt;repository-location derived-from=&apos;/datasources/v_Operational_KPIs_Patient_ComplianceDWH?rev=1.7&apos; id=&apos;v_Operational_KPIs_Patient_ComplianceDWH&apos; path=&apos;/t/apostherapy/datasources&apos; revision=&apos;1.8&apos; site=&apos;apostherapy&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;v_Operational_KPIs_Patient_ComplianceDWH&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;eu-west-1a.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Activity_Status]&apos; value=&apos;[sqlproxy].[Activity_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_185210568723709952]&apos; value=&apos;[sqlproxy].[Calculation_185210568723709952]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_185210568723775489]&apos; value=&apos;[sqlproxy].[Calculation_185210568723775489]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Branch]&apos; value=&apos;[sqlproxy].[Clinic_Branch]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Name]&apos; value=&apos;[sqlproxy].[Clinic_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Compliance_Type]&apos; value=&apos;[sqlproxy].[Compliance_Type]&apos; /&gt;&#10;      &lt;map key=&apos;[Continent]&apos; value=&apos;[sqlproxy].[Continent]&apos; /&gt;&#10;      &lt;map key=&apos;[Days_from_IC]&apos; value=&apos;[sqlproxy].[Days_from_IC]&apos; /&gt;&#10;      &lt;map key=&apos;[Days_from_Previous_Visit]&apos; value=&apos;[sqlproxy].[Days_from_Previous_Visit]&apos; /&gt;&#10;      &lt;map key=&apos;[Discharge_Date]&apos; value=&apos;[sqlproxy].[Discharge_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Date]&apos; value=&apos;[sqlproxy].[IC_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Visit_ID]&apos; value=&apos;[sqlproxy].[IC_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer]&apos; value=&apos;[sqlproxy].[Insurer]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer_Group]&apos; value=&apos;[sqlproxy].[Insurer_Group]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Compliant]&apos; value=&apos;[sqlproxy].[Is_Compliant]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Historical_Patient]&apos; value=&apos;[sqlproxy].[Is_Historical_Patient]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[PT_Name]&apos; value=&apos;[sqlproxy].[PT_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology]&apos; value=&apos;[sqlproxy].[Pathology]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology_Area]&apos; value=&apos;[sqlproxy].[Pathology_Area]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_ID]&apos; value=&apos;[sqlproxy].[Patient_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Key]&apos; value=&apos;[sqlproxy].[Patient_Key]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Parent_ID]&apos; value=&apos;[sqlproxy].[Patient_Parent_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Name]&apos; value=&apos;[sqlproxy].[Period_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Number]&apos; value=&apos;[sqlproxy].[Period_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year]&apos; value=&apos;[sqlproxy].[Period_Year]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year_Number]&apos; value=&apos;[sqlproxy].[Period_Year_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Previous_Visit_Date]&apos; value=&apos;[sqlproxy].[Previous_Visit_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Previous_Visit_ID]&apos; value=&apos;[sqlproxy].[Previous_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Reference_Date]&apos; value=&apos;[sqlproxy].[Reference_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Suitability_Status]&apos; value=&apos;[sqlproxy].[Suitability_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Territory]&apos; value=&apos;[sqlproxy].[Territory]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_Date]&apos; value=&apos;[sqlproxy].[Visit_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_ID]&apos; value=&apos;[sqlproxy].[Visit_ID]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Activity_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Activity_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;\# of Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_185210568723709952]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD([Patient_Key])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;\# of Parent Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_185210568723775489]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD( ([Patient_Parent_ID]))&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Branch]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Branch_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Compliance Type&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Compliance_Type]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Continent Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Continent_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Days from IC&apos; datatype=&apos;integer&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Days_from_IC]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Days from Previous Visit&apos; datatype=&apos;integer&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Days_from_Previous_Visit]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Discharge Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Discharge_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;IC Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[IC_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;IC Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[IC_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Group&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Insurer_Group]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Insurer Group Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Group_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;KPI Population&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Is_Compliant]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;Non Compliant&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;Compliant&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Is Historical Patient&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Is_Historical_Patient]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;No&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;Yes&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[PT_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[PT_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Pathology_Area]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Area_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Patient_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Parent ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_Parent_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Year_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Year_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Previous Visit Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Previous_Visit_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Previous Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Previous_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Reference Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Reference_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Suitability Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Suitability_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Suitability Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Suitability_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Territory Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Territory_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Visit Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Visit_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Is_Compliant]&apos; derivation=&apos;None&apos; name=&apos;[none:Is_Compliant:ok]&apos; pivot=&apos;key&apos; type=&apos;ordinal&apos; /&gt;&#10;  &lt;drill-paths&gt;&#10;    &lt;drill-path name=&apos;Clinics&apos;&gt;&#10;      &lt;field&gt;[Continent]&lt;/field&gt;&#10;      &lt;field&gt;[Territory]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Branch]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Insurers&apos;&gt;&#10;      &lt;field&gt;[Insurer_Group]&lt;/field&gt;&#10;      &lt;field&gt;[Insurer]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;KPI Period&apos;&gt;&#10;      &lt;field&gt;[Period_Year]&lt;/field&gt;&#10;      &lt;field&gt;[Period_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;KPI Population&apos;&gt;&#10;      &lt;field&gt;[Is_Compliant]&lt;/field&gt;&#10;      &lt;field&gt;[Compliance_Type]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Pathology&apos;&gt;&#10;      &lt;field&gt;[Pathology_Area]&lt;/field&gt;&#10;      &lt;field&gt;[Pathology]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Patient ID&apos;&gt;&#10;      &lt;field&gt;[Patient_Parent_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_Key]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;  &lt;/drill-paths&gt;&#10;  &lt;folder name=&apos;Patient Current Data&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Is_Historical_Patient]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[PT_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Suitability_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Insurers&apos; type=&apos;drillpath&apos; /&gt;&#10;    &lt;folder-item name=&apos;Pathology&apos; type=&apos;drillpath&apos; /&gt;&#10;    &lt;folder-item name=&apos;Patient ID&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Periods&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Period_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;KPI Period&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.725724&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.274276&apos; show-aliased-fields=&apos;true&apos; show-structure=&apos;false&apos; user-set-layout=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;  &lt;default-sorts&gt;&#10;    &lt;manual-sort column=&apos;[none:Is_Compliant:ok]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;1&lt;/bucket&gt;&#10;        &lt;bucket&gt;0&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;  &lt;/default-sorts&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;v_Operational_KPIs_Patient_Compliance (DWH)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://eu-west-1a.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;document-format-change-manifest&gt;&#10;    &lt;SortTagCleanup /&gt;&#10;  &lt;/document-format-change-manifest&gt;&#10;  &lt;repository-location derived-from=&apos;/datasources/v_Operational_KPIs_Patient_ComplianceDWH?rev=1.8&apos; id=&apos;v_Operational_KPIs_Patient_ComplianceDWH&apos; path=&apos;/t/apostherapy/datasources&apos; revision=&apos;2.0&apos; site=&apos;apostherapy&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;v_Operational_KPIs_Patient_ComplianceDWH&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;eu-west-1a.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Activity_Status]&apos; value=&apos;[sqlproxy].[Activity_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_185210568723709952]&apos; value=&apos;[sqlproxy].[Calculation_185210568723709952]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_185210568723775489]&apos; value=&apos;[sqlproxy].[Calculation_185210568723775489]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Branch]&apos; value=&apos;[sqlproxy].[Clinic_Branch]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Name]&apos; value=&apos;[sqlproxy].[Clinic_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Compliance_Type]&apos; value=&apos;[sqlproxy].[Compliance_Type]&apos; /&gt;&#10;      &lt;map key=&apos;[Continent]&apos; value=&apos;[sqlproxy].[Continent]&apos; /&gt;&#10;      &lt;map key=&apos;[Days_from_IC]&apos; value=&apos;[sqlproxy].[Days_from_IC]&apos; /&gt;&#10;      &lt;map key=&apos;[Days_from_Previous_Visit]&apos; value=&apos;[sqlproxy].[Days_from_Previous_Visit]&apos; /&gt;&#10;      &lt;map key=&apos;[Discharge_Date]&apos; value=&apos;[sqlproxy].[Discharge_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Date]&apos; value=&apos;[sqlproxy].[IC_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Visit_ID]&apos; value=&apos;[sqlproxy].[IC_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer]&apos; value=&apos;[sqlproxy].[Insurer]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer_Group]&apos; value=&apos;[sqlproxy].[Insurer_Group]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Compliant]&apos; value=&apos;[sqlproxy].[Is_Compliant]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Historical_Patient]&apos; value=&apos;[sqlproxy].[Is_Historical_Patient]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[PT_Name]&apos; value=&apos;[sqlproxy].[PT_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology]&apos; value=&apos;[sqlproxy].[Pathology]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology_Area]&apos; value=&apos;[sqlproxy].[Pathology_Area]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_ID]&apos; value=&apos;[sqlproxy].[Patient_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Key]&apos; value=&apos;[sqlproxy].[Patient_Key]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Parent_ID]&apos; value=&apos;[sqlproxy].[Patient_Parent_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Name]&apos; value=&apos;[sqlproxy].[Period_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Number]&apos; value=&apos;[sqlproxy].[Period_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year]&apos; value=&apos;[sqlproxy].[Period_Year]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year_Number]&apos; value=&apos;[sqlproxy].[Period_Year_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Previous_Visit_Date]&apos; value=&apos;[sqlproxy].[Previous_Visit_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Previous_Visit_ID]&apos; value=&apos;[sqlproxy].[Previous_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Reference_Date]&apos; value=&apos;[sqlproxy].[Reference_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Suitability_Status]&apos; value=&apos;[sqlproxy].[Suitability_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Territory]&apos; value=&apos;[sqlproxy].[Territory]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_Date]&apos; value=&apos;[sqlproxy].[Visit_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_ID]&apos; value=&apos;[sqlproxy].[Visit_ID]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Activity_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Activity_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;\# of Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_185210568723709952]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD([Patient_Key])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;\# of Parent Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_185210568723775489]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD( ([Patient_Parent_ID]))&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Branch]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Branch_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Compliance Type&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Compliance_Type]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Continent Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Continent_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Days from IC&apos; datatype=&apos;integer&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Days_from_IC]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Days from Previous Visit&apos; datatype=&apos;integer&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Days_from_Previous_Visit]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Discharge Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Discharge_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;IC Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[IC_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;IC Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[IC_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Group&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Insurer_Group]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Insurer Group Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Group_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;KPI Population&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Is_Compliant]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;Non Compliant&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;Compliant&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Is Historical Patient&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Is_Historical_Patient]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;No&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;Yes&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[PT_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[PT_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Pathology_Area]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Area_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Patient_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Parent ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_Parent_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Year_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Year_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Previous Visit Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Previous_Visit_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Previous Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Previous_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Reference Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Reference_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Suitability Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Suitability_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Suitability Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Suitability_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Territory Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Territory_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Visit Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Visit_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Is_Compliant]&apos; derivation=&apos;None&apos; name=&apos;[none:Is_Compliant:ok]&apos; pivot=&apos;key&apos; type=&apos;ordinal&apos; /&gt;&#10;  &lt;drill-paths&gt;&#10;    &lt;drill-path name=&apos;Clinics&apos;&gt;&#10;      &lt;field&gt;[Continent]&lt;/field&gt;&#10;      &lt;field&gt;[Territory]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Branch]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Insurers&apos;&gt;&#10;      &lt;field&gt;[Insurer_Group]&lt;/field&gt;&#10;      &lt;field&gt;[Insurer]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;KPI Period&apos;&gt;&#10;      &lt;field&gt;[Period_Year]&lt;/field&gt;&#10;      &lt;field&gt;[Period_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;KPI Population&apos;&gt;&#10;      &lt;field&gt;[Is_Compliant]&lt;/field&gt;&#10;      &lt;field&gt;[Compliance_Type]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Pathology&apos;&gt;&#10;      &lt;field&gt;[Pathology_Area]&lt;/field&gt;&#10;      &lt;field&gt;[Pathology]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Patient ID&apos;&gt;&#10;      &lt;field&gt;[Patient_Parent_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_Key]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;  &lt;/drill-paths&gt;&#10;  &lt;folder name=&apos;Patient Current Data&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Is_Historical_Patient]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[PT_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Suitability_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Insurers&apos; type=&apos;drillpath&apos; /&gt;&#10;    &lt;folder-item name=&apos;Pathology&apos; type=&apos;drillpath&apos; /&gt;&#10;    &lt;folder-item name=&apos;Patient ID&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Periods&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Period_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;KPI Period&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.725724&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.274276&apos; show-aliased-fields=&apos;true&apos; show-structure=&apos;false&apos; user-set-layout=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;  &lt;default-sorts&gt;&#10;    &lt;manual-sort column=&apos;[none:Is_Compliant:ok]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;1&lt;/bucket&gt;&#10;        &lt;bucket&gt;0&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;  &lt;/default-sorts&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
               <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;hyper&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
               <attribute datatype='boolean' name='extract-active'>true</attribute>
               <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
-              <attribute datatype='string' name='update-time'>&quot;8/27/2018 1:53:17 PM&quot;</attribute>
+              <attribute datatype='string' name='update-time'>&quot;9/6/2018 1:11:21 PM&quot;</attribute>
             </attributes>
           </metadata-record>
         </metadata-records>
@@ -867,7 +867,7 @@
         <folder-item name='[Period_Year_Number]' type='field' />
         <folder-item name='KPI Period' type='drillpath' />
       </folder>
-      <layout dim-ordering='alphabetic' dim-percentage='0.623207' group-percentage='0.053455' measure-ordering='alphabetic' measure-percentage='0.323338' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.426336' group-percentage='0.232073' measure-ordering='alphabetic' measure-percentage='0.341591' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[none:Is_Compliant:ok]' type='palette'>
@@ -1046,7 +1046,7 @@
         <column-instance column='[Territory]' derivation='None' name='[none:Territory:nk]' pivot='key' type='nominal' />
       </datasource-dependencies>
       <filter class='categorical' column='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Clinic_Branch:nk]'>
-        <groupfilter function='member' level='[none:Clinic_Branch:nk]' member='&quot;Circle&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <groupfilter function='member' level='[none:Clinic_Branch:nk]' member='&quot;Mid Essex&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
       </filter>
       <filter class='categorical' column='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Clinic_Name:nk]'>
         <groupfilter function='level-members' level='[none:Clinic_Name:nk]' />
@@ -1070,12 +1070,19 @@
         <groupfilter function='level-members' level='[none:Pathology_Area:nk]' />
       </filter>
       <filter class='categorical' column='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Period_Name:nk]'>
-        <groupfilter function='level-members' level='[none:Period_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;1st FU&quot;' />
+          <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;2nd FU&quot;' />
+          <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;3rd FU&quot;' />
+          <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;4th FU&quot;' />
+          <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;5th FU&quot;' />
+          <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;6th FU&quot;' />
+        </groupfilter>
       </filter>
       <filter class='categorical' column='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Period_Year:nk]'>
         <groupfilter function='member' level='[none:Period_Year:nk]' member='&quot;First Year&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
       </filter>
-      <filter class='relative-date' column='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Reference_Date:qk]' first-period='-11' include-future='true' include-null='false' last-period='0' period-type='month' />
+      <filter class='relative-date' column='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Reference_Date:qk]' first-period='-5' include-future='true' include-null='false' last-period='0' period-type='year' />
       <filter class='categorical' column='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Territory:nk]'>
         <groupfilter function='level-members' level='[none:Territory:nk]' />
       </filter>
@@ -1615,13 +1622,10 @@
         </view>
         <style>
           <style-rule element='cell'>
-            <format attr='width' field='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[:Measure Names]' value='86' />
             <format attr='text-format' field='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[usr:# of Patients (copy):qk]' value='n#,##0;-#,##0' />
             <format attr='text-format' field='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[usr:Calculation_185210568723709952:qk]' value='n#,##0;-#,##0' />
             <format attr='text-format' field='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[usr:Calculation1:qk]' value='p0.0%' />
-          </style-rule>
-          <style-rule element='header'>
-            <format attr='width' field='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Clinic_Branch:nk]' value='196' />
+            <format attr='width' field='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[:Measure Names]' value='87' />
           </style-rule>
           <style-rule element='label'>
             <format attr='text-format' field='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[mn:Reference_Date:ok]' value='iLLL' />
@@ -2699,14 +2703,14 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='worksheet' name='Full Table'>
+    <window class='worksheet' maximized='true' name='Full Table'>
       <cards>
         <edge name='left'>
           <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-            <card type='measures' />
+            <card size='31' type='pages' />
+            <card size='147' type='filters' />
+            <card size='174' type='marks' />
+            <card size='93' type='measures' />
           </strip>
         </edge>
         <edge name='top'>
@@ -2720,12 +2724,26 @@
             <card type='title' />
           </strip>
         </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Reference_Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:IC_Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Period_Year:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Period_Name:nk]' type='filter' values='cascading' />
+            <card mode='dropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Is_Historical_Patient:ok]' type='filter' />
+            <card mode='checkdropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Continent:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Territory:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Clinic_Branch:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Clinic_Name:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Insurer:nk]' type='filter' values='cascading' />
+          </strip>
+        </edge>
       </cards>
       <viewpoint>
-        <zoom type='entire-view' />
         <highlight>
           <color-one-way>
             <field>[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[:Measure Names]</field>
+            <field>[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Calculation_198721368640708613:nk]</field>
             <field>[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Continent:nk]</field>
             <field>[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Insurer_Group:nk]</field>
             <field>[sqlproxy.1dqwtee1xbo57c1377x1o1637e7l].[none:Period_Name:nk]</field>
@@ -2870,7 +2888,7 @@
         </highlight>
       </viewpoint>
     </window>
-    <window class='dashboard' maximized='true' name='KPI Compliance - By Period'>
+    <window class='dashboard' name='KPI Compliance - By Period'>
       <viewpoints>
         <viewpoint name='Avg Days'>
           <zoom type='entire-view' />
@@ -2887,7 +2905,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='7' />
     </window>
     <window class='worksheet' name='Monthly Compliance'>
       <cards>
@@ -3138,373 +3156,230 @@
     </thumbnail>
     <thumbnail height='192' name='Full Table' width='192'>
       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
-      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
-      iDT/DW98DmeoVEx0AAAAAElFTkSuQmCC
+      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
     </thumbnail>
     <thumbnail height='192' name='KPI Compliance - By Period' width='192'>
       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
-      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
-      GCRbjSVFZ6wAAAAASUVORK5CYII=
+      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
     </thumbnail>
     <thumbnail height='192' name='KPI Compliance - By Population Type' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk

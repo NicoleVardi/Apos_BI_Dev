@@ -7,12 +7,12 @@
   DTS:CreatorName="APOSTHERAPY\nicole"
   DTS:DTSID="{5B62E29E-DAE5-4EE2-902C-825328B8C03D}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LastModifiedProductVersion="14.0.3002.101"
   DTS:LocaleID="1033"
   DTS:ObjectName="Config_Patient_Files"
   DTS:PackageType="5"
-  DTS:VersionBuild="57"
-  DTS:VersionGUID="{968B75B9-B5D0-411E-AA3F-963D4D89AA54}">
+  DTS:VersionBuild="67"
+  DTS:VersionGUID="{C356438F-6CEF-4009-959A-DF5D64A91DCB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Dropped_Out_Patients">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Patients_Dropped_Out\Dropped_Out_Patients.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Patients_Dropped_Out\Dropped_Out_Patients.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -35,11 +35,11 @@
         DTS:Name="ConnectionString">@[$Project::DWH]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=BISRV-DEV;User ID=BIAdmin;Initial Catalog=DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=BISRV;User ID=BIAdmin;Initial Catalog=DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAvewbxlC5FSb/POSPsVmHbAAAAAASAAACgAAAAEAAAABJoZjEv2uaTpIp5QRshFFIQAAAAOnjO4/jIWg3WiMu+o7qtEhQAAAA32GYoStRri7u3K48xPYA9mcrBmg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYouOJ71T+j6fDNa/Q9YvmAAAAAASAAACgAAAAEAAAANgtHwwIxjuNInotj8Ao99YYAAAAgvVRaCGpVJ/3JFyhlrwP3tKev6C2Hdj7FAAAAEd5ks1BVE69/CZTjtckPmN61AJB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -52,11 +52,11 @@
         DTS:Name="ConnectionString">@[$Project::MRR]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=BISRV-DEV;User ID=BIAdmin;Initial Catalog=MRR;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=BISRV;User ID=BIAdmin;Initial Catalog=MRR;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABAs4CnHzhguQspGm11fuybAAAAAASAAACgAAAAEAAAAAyKD2uZW7A3eZJHT0dlZHIQAAAAS/d76MSgoRhW8vddnCAMwRQAAADrZmDRgBgQpPLrHGz6yu+v/Jgu0w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAzic5holm9t9LagPGxB0KDAAAAAASAAACgAAAAEAAAAM7NmrfdxQErKZZ662zWRM4YAAAAWvom9a+mXNLPaHVCrvmQa2z3Dy/CnYbJFAAAANx1SsEeW2gAkWAD1ZqR/jnBC8u+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -67,7 +67,7 @@
       DTS:ObjectName="Pathology_Area_Mapping">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Pathology_Area\Pathology_Area_Mapping.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Pathology_Area\Pathology_Area_Mapping.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -77,7 +77,7 @@
       DTS:ObjectName="Patient_Insurer">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Patient_Insurer\Patient_Insurer.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Patient_Insurer\Patient_Insurer.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -87,7 +87,7 @@
       DTS:ObjectName="Patient_Suitabillity_Status">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Patient_Suitability_Status\Patient_Suitabillity_Status.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Patient_Suitability_Status\Patient_Suitabillity_Status.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -820,6 +820,95 @@
                       </outputs>
                     </component>
                     <component
+                      refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows"
+                      componentClassID="Microsoft.ConditionalSplit"
+                      contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                      name="Exclude NULL Rows"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Inputs[Conditional Split Input]"
+                          description="Input to the Conditional Split Transformation"
+                          name="Conditional Split Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Inputs[Conditional Split Input].Columns[Patient_Key]"
+                              cachedDataType="r8"
+                              cachedName="Patient_Key"
+                              lineageId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Dropped_Out_Patients.Outputs[Excel Source Output].Columns[Patient_Key]" />
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[Valid Records]"
+                          description="Output 1 of the Conditional Split Transformation"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          exclusionGroup="1"
+                          name="Valid Records"
+                          synchronousInputId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Inputs[Conditional Split Input]"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                              name="Expression">![ISNULL](#{Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Dropped_Out_Patients.Outputs[Excel Source Output].Columns[Patient_Key]})</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the friendly version of the expression. This expression version uses column names."
+                              expressionType="Notify"
+                              name="FriendlyExpression">!ISNULL(Patient_Key)</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                              name="EvaluationOrder">0</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[NULL Records]"
+                          description="Default Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          name="NULL Records"
+                          synchronousInputId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Inputs[Conditional Split Input]">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              name="IsDefaultOut">true</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[Conditional Split Error Output]"
+                          description="Error Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Conditional Split Error Output"
+                          synchronousInputId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Inputs[Conditional Split Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
                       refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\ext Dropped_Out_Patients"
                       componentClassID="Microsoft.OLEDBDestination"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -951,9 +1040,14 @@
                       startId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Derived Column.Outputs[Derived Column Output]" />
                     <path
                       refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients.Paths[Excel Source Output]"
-                      endId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Derived Column.Inputs[Derived Column Input]"
+                      endId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Inputs[Conditional Split Input]"
                       name="Excel Source Output"
                       startId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Dropped_Out_Patients.Outputs[Excel Source Output]" />
+                    <path
+                      refId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients.Paths[Valid Records]"
+                      endId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Derived Column.Inputs[Derived Column Input]"
+                      name="Valid Records"
+                      startId="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows.Outputs[Valid Records]" />
                   </paths>
                 </pipeline>
               </DTS:ObjectData>
@@ -967,7 +1061,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -991,7 +1085,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1021,7 +1115,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to dbo Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1038,12 +1132,12 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Update DWH Dim_Patients"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{81711585-5519-47F4-84E9-DA1F86305F26}"
-                  SQLTask:SqlStatementSource="-- Patients that need to be updated as Dropped Out&#xA;SELECT P.*, PAS.Activity_Status_Key as DO_Activity_Status_Key&#xA;INTO #Temp&#xA;FROM DWH.dbo.Dim_Patients P&#xA;INNER JOIN DWH.dbo.Dim_Patient_Activity_Status PAS ON P.Activity_Status_Key = PAS.Activity_Status_Key&#xA;INNER JOIN MRR.dbo.Dropped_Out_Patients DO ON P.Patient_Key = DO.Patient_Key&#xA;WHERE PAS.Activity_Status not in ('Dropped Out','N\A')&#xA;&#xA;UPDATE P&#xA;SET Patient_ID = CONCAT(P.Patient_Parent_ID,'_DO'),&#xA;&#x9;Activity_Status_Key = (SELECT Activity_Status_Key FROM DWH.dbo.Dim_Patient_Activity_Status WHERE Activity_Status = 'Dropped Out'),&#xA;&#x9;Discharge_Date = P.Last_Visit_Date,&#xA;&#x9;Is_Discharged_Patient = 1,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM Dwh.dbo.Dim_Patients P&#xA;INNER JOIN #Temp T ON P.Patient_Key = T.Patient_Key&#xA;&#xA;-- Audit Patient Dropped Out &amp; Activit Status Change&#xA;DECLARE &#xA;&#x9;@Patient_Parent_ID varchar (50),&#xA;&#x9;@Activity_Status_Key int,&#xA;&#x9;@Old_Activity_Status_Key int,&#xA;&#x9;@IC_Date date&#xA;&#x9;&#xA;DECLARE cur CURSOR LOCAL FOR&#xA;&#xA;&#x9;SELECT Patient_Parent_ID, Activity_Status_Key, DO_Activity_Status_Key, IC_Date &#xA;&#x9;FROM #Temp&#xA;&#xA;OPEN cur&#xA;&#xA;FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;WHILE @@FETCH_STATUS = 0 BEGIN&#xA;&#xA;    --execute your sproc on each row&#xA;    EXEC DWH.adm.Log_Patient_Activity_Status_Change @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;    FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;END&#xA;&#xA;CLOSE cur&#xA;DEALLOCATE cur;&#xA;&#xA;DROP TABLE #Temp;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="-- Patients that need to be updated as Dropped Out&#xA;SELECT P.*, PAS.Activity_Status_Key as DO_Activity_Status_Key&#xA;INTO #Temp&#xA;FROM DWH.dbo.Dim_Patients P&#xA;INNER JOIN DWH.dbo.Dim_Patient_Activity_Status PAS ON P.Activity_Status_Key = PAS.Activity_Status_Key&#xA;INNER JOIN MRR.dbo.Dropped_Out_Patients DO ON P.Patient_Key = DO.Patient_Key&#xA;WHERE PAS.Activity_Status not in ('Dropped Out','N\A','Changed Pathology')&#xA;&#xA;UPDATE P&#xA;SET Patient_ID = CASE WHEN P.Patient_ID LIKE '%_DO' THEN P.Patient_ID ELSE CONCAT(P.Patient_ID,'_DO') END,&#xA;&#x9;Activity_Status_Key = (SELECT Activity_Status_Key FROM DWH.dbo.Dim_Patient_Activity_Status WHERE Activity_Status = 'Dropped Out'),&#xA;&#x9;Discharge_Date = P.Last_Visit_Date,&#xA;&#x9;Is_Discharged_Patient = 1,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM Dwh.dbo.Dim_Patients P&#xA;INNER JOIN #Temp T ON P.Patient_Key = T.Patient_Key&#xA;&#xA;-- Audit Patient Dropped Out &amp; Activit Status Change&#xA;DECLARE &#xA;&#x9;@Patient_Parent_ID varchar (50),&#xA;&#x9;@Activity_Status_Key int,&#xA;&#x9;@Old_Activity_Status_Key int,&#xA;&#x9;@IC_Date date&#xA;&#x9;&#xA;DECLARE cur CURSOR LOCAL FOR&#xA;&#xA;&#x9;SELECT Patient_Parent_ID, Activity_Status_Key, DO_Activity_Status_Key, IC_Date &#xA;&#x9;FROM #Temp A&#xA;&#x9;INNER JOIN Dim_Clinic_Branch CB ON A.Clinic_Branch_ID = CB.Clinic_Branch_ID&#xA;&#x9;WHERE Clinic_Branch NOT IN ('Montefiore','Mount Sinai')&#xA;&#xA;OPEN cur&#xA;&#xA;FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;WHILE @@FETCH_STATUS = 0 BEGIN&#xA;&#xA;    --execute your sproc on each row&#xA;    EXEC DWH.adm.Log_Patient_Activity_Status_Change @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;    FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;END&#xA;&#xA;CLOSE cur&#xA;DEALLOCATE cur;&#xA;&#xA;DROP TABLE #Temp;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1234,6 +1328,96 @@
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                               dataType="i4"
                               lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows"
+                      componentClassID="Microsoft.ConditionalSplit"
+                      contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                      name="Exclude NULL Rows"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Inputs[Conditional Split Input]"
+                          description="Input to the Conditional Split Transformation"
+                          name="Conditional Split Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Inputs[Conditional Split Input].Columns[Patient_Parent_ID]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Patient_Parent_ID"
+                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_Parent_ID]" />
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[Valid Records]"
+                          description="Output 1 of the Conditional Split Transformation"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          exclusionGroup="1"
+                          name="Valid Records"
+                          synchronousInputId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Inputs[Conditional Split Input]"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                              name="Expression">![ISNULL](#{Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_Parent_ID]})</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the friendly version of the expression. This expression version uses column names."
+                              expressionType="Notify"
+                              name="FriendlyExpression">!ISNULL(Patient_Parent_ID)</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                              name="EvaluationOrder">0</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[NULL Records]"
+                          description="Default Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          name="NULL Records"
+                          synchronousInputId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Inputs[Conditional Split Input]">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              name="IsDefaultOut">true</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[Conditional Split Error Output]"
+                          description="Error Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Conditional Split Error Output"
+                          synchronousInputId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Inputs[Conditional Split Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                               name="ErrorColumn"
                               specialFlags="2" />
                           </outputColumns>
@@ -1513,9 +1697,14 @@
                       startId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Outputs[Derived Column Output]" />
                     <path
                       refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer.Paths[Excel Source Output]"
-                      endId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Inputs[Derived Column Input]"
+                      endId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Inputs[Conditional Split Input]"
                       name="Excel Source Output"
                       startId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output]" />
+                    <path
+                      refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer.Paths[Valid Records]"
+                      endId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Inputs[Derived Column Input]"
+                      name="Valid Records"
+                      startId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows.Outputs[Valid Records]" />
                   </paths>
                 </pipeline>
               </DTS:ObjectData>
@@ -1529,7 +1718,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1553,7 +1742,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1583,7 +1772,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to dbo Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1717,6 +1906,95 @@
                       </outputs>
                     </component>
                     <component
+                      refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows"
+                      componentClassID="Microsoft.ConditionalSplit"
+                      contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                      name="Exclude NULL Rows"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Inputs[Conditional Split Input]"
+                          description="Input to the Conditional Split Transformation"
+                          name="Conditional Split Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Inputs[Conditional Split Input].Columns[Patient_Key]"
+                              cachedDataType="r8"
+                              cachedName="Patient_Key"
+                              lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Patient_Key]" />
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[Patient_Key not NULL]"
+                          description="Output 1 of the Conditional Split Transformation"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          exclusionGroup="1"
+                          name="Patient_Key not NULL"
+                          synchronousInputId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Inputs[Conditional Split Input]"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                              name="Expression">![ISNULL](#{Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Patient_Key]})</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the friendly version of the expression. This expression version uses column names."
+                              expressionType="Notify"
+                              name="FriendlyExpression">!ISNULL(Patient_Key)</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                              name="EvaluationOrder">0</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[NULL Rows]"
+                          description="Default Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          name="NULL Rows"
+                          synchronousInputId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Inputs[Conditional Split Input]">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              name="IsDefaultOut">true</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[Conditional Split Error Output]"
+                          description="Error Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Conditional Split Error Output"
+                          synchronousInputId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Inputs[Conditional Split Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
                       refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\ext Suitability_Status"
                       componentClassID="Microsoft.OLEDBDestination"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -1790,8 +2068,7 @@
                           <inputColumns>
                             <inputColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\ext Suitability_Status.Inputs[OLE DB Destination Input].Columns[Is_Joined]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
+                              cachedDataType="r8"
                               cachedName="Is_Joined"
                               externalMetadataColumnId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\ext Suitability_Status.Inputs[OLE DB Destination Input].ExternalColumns[Is_Joined]"
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Is_Joined]" />
@@ -1930,11 +2207,10 @@
                           <outputColumns>
                             <outputColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Is_Joined]"
-                              dataType="wstr"
+                              dataType="r8"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].ExternalColumns[Is_Joined]"
-                              length="255"
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Is_Joined]"
                               name="Is_Joined"
                               truncationRowDisposition="FailComponent" />
@@ -1972,8 +2248,7 @@
                             isUsed="True">
                             <externalMetadataColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].ExternalColumns[Is_Joined]"
-                              dataType="wstr"
-                              length="255"
+                              dataType="r8"
                               name="Is_Joined" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].ExternalColumns[Is_Unsuitable]"
@@ -2003,8 +2278,7 @@
                               name="Patient_Key" />
                             <outputColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Error Output].Columns[Is_Joined]"
-                              dataType="wstr"
-                              length="255"
+                              dataType="r8"
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Error Output].Columns[Is_Joined]"
                               name="Is_Joined" />
                             <outputColumn
@@ -2045,9 +2319,14 @@
                       startId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Derived Column.Outputs[Derived Column Output]" />
                     <path
                       refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status.Paths[Excel Source Output]"
-                      endId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Derived Column.Inputs[Derived Column Input]"
+                      endId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Inputs[Conditional Split Input]"
                       name="Excel Source Output"
                       startId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output]" />
+                    <path
+                      refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status.Paths[Patient_Key not NULL]"
+                      endId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Derived Column.Inputs[Derived Column Input]"
+                      name="Patient_Key not NULL"
+                      startId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows.Outputs[Patient_Key not NULL]" />
                   </paths>
                 </pipeline>
               </DTS:ObjectData>
@@ -2061,7 +2340,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2085,7 +2364,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2115,12 +2394,12 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to dbo Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{29EE997F-F1B1-4626-89B5-F86153921C33}"
-                  SQLTask:SqlStatementSource="MERGE dbo.Suitability_Status as T&#xA;USING (&#xA;&#x9;SELECT &#xA;&#x9;&#x9; Patient_Key&#xA;&#x9;&#x9;,CONVERT(varchar(50),&#xA;&#x9;&#x9;&#x9;CASE WHEN Is_Joined IS NOT NULL THEN 'Joined' &#xA;&#x9;&#x9;&#x9;&#x9; WHEN Is_Unsuitable IS NOT NULL THEN 'Unsuitable'&#xA;&#x9;&#x9;&#x9;&#x9; WHEN Is_Declined IS NOT NULL THEN 'Declined' &#xA;&#x9;&#x9;&#x9;&#x9; END&#xA;&#x9;&#x9;&#x9;) as Suitability_Status&#xA;&#x9;FROM ext.Suitability_Status&#xA;&#x9;WHERE NOT ( -- exclude rows with multiple statuses marked&#xA;&#x9;&#x9;(Is_Joined IS NOT NULL AND Is_Unsuitable IS NOT NULL) &#xA;&#x9;&#x9;OR (Is_Unsuitable IS NOT NULL AND Is_Declined IS NOT NULL) &#xA;&#x9;&#x9;OR (Is_Joined IS NOT NULL AND Is_Declined IS NOT NULL)&#xA;&#x9;&#x9;OR (Is_Joined IS NULL AND Is_Unsuitable IS NULL AND Is_Joined IS NULL))&#xA;&#x9;) as S ON T.Patient_Key = S.Patient_Key&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Suitability_Status = S.Suitability_Status,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Patient_Key, Suitability_Status)&#xA;&#x9;VALUES (S.Patient_Key, S.Suitability_Status);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="MERGE dbo.Suitability_Status as T&#xA;USING (&#xA;&#x9;SELECT &#xA;&#x9;&#x9; Patient_Key&#xA;&#x9;&#x9;,CONVERT(varchar(50),&#xA;&#x9;&#x9;&#x9;CASE WHEN Is_Joined IS NOT NULL THEN 'Joined' &#xA;&#x9;&#x9;&#x9;&#x9; WHEN Is_Unsuitable IS NOT NULL THEN 'Unsuitable'&#xA;&#x9;&#x9;&#x9;&#x9; WHEN Is_Declined IS NOT NULL THEN 'Declined' &#xA;&#x9;&#x9;&#x9;&#x9; END&#xA;&#x9;&#x9;&#x9;) as Suitability_Status&#xA;&#x9;FROM ext.Suitability_Status&#xA;&#x9;WHERE NOT ( -- exclude rows with multiple statuses marked&#xA;&#x9;&#x9;(Is_Joined IS NOT NULL AND Is_Unsuitable IS NOT NULL) &#xA;&#x9;&#x9;OR (Is_Unsuitable IS NOT NULL AND Is_Declined IS NOT NULL) &#xA;&#x9;&#x9;OR (Is_Joined IS NOT NULL AND Is_Declined IS NOT NULL)&#xA;&#x9;&#x9;OR (Is_Joined IS NULL AND Is_Unsuitable IS NULL AND Is_Declined IS NULL))&#xA;&#x9;) as S ON T.Patient_Key = S.Patient_Key&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Suitability_Status = S.Suitability_Status,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Patient_Key, Suitability_Status)&#xA;&#x9;VALUES (S.Patient_Key, S.Suitability_Status);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -2132,7 +2411,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Update DWH Dim_Patients"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2336,7 +2615,7 @@
           Id="Package\Load External Files\Dim Pathology Area\Load ext Pathology_Area_Mapping"
           TopLeft="5.50000000000001,107.5" />
         <NodeLayout
-          Size="117,42"
+          Size="117.333333333334,42"
           Id="Package\Load External Files\Dim Pathology Area\Log End"
           TopLeft="68,311.5" />
         <NodeLayout
@@ -2416,8 +2695,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="253,409"
-          Size="253,452"
+          PanelSize="253.333333333334,409.333333333334"
+          Size="253.333333333334,452"
           Id="Package\Load External Files\Dim Pathology Area"
           TopLeft="5.5,56.4999999999999" />
         <NodeLayout
@@ -2425,7 +2704,7 @@
           Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients"
           TopLeft="5.50000000000001,107.5" />
         <NodeLayout
-          Size="117,42"
+          Size="117.333333333334,42"
           Id="Package\Load External Files\Dropped Out Patients\Log End"
           TopLeft="59,413.5" />
         <NodeLayout
@@ -2433,11 +2712,11 @@
           Id="Package\Load External Files\Dropped Out Patients\Log Start"
           TopLeft="56.5,5.5" />
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\Load External Files\Dropped Out Patients\Merge to dbo Table"
           TopLeft="32,209.5" />
         <NodeLayout
-          Size="205,42"
+          Size="205.333333333334,42"
           Id="Package\Load External Files\Dropped Out Patients\Update DWH Dim_Patients"
           TopLeft="15,311.5" />
         <EdgeLayout
@@ -2531,16 +2810,16 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="235,511"
-          Size="235,554"
+          PanelSize="234.666666666667,510.666666666667"
+          Size="234.666666666667,554"
           Id="Package\Load External Files\Dropped Out Patients"
           TopLeft="319.5,5.49999999999989" />
         <NodeLayout
-          Size="195,42"
+          Size="196,42.6666666666667"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer"
           TopLeft="5.50000000000001,107.5" />
         <NodeLayout
-          Size="117,42"
+          Size="117.333333333334,42"
           Id="Package\Load External Files\Patient Insurer\Log End"
           TopLeft="44.5,311.5" />
         <NodeLayout
@@ -2548,12 +2827,12 @@
           Id="Package\Load External Files\Patient Insurer\Log Start"
           TopLeft="42,5.5" />
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\Load External Files\Patient Insurer\Merge to dbo Table"
           TopLeft="17.5,209.5" />
         <EdgeLayout
           Id="Package\Load External Files\Patient Insurer.PrecedenceConstraints[Constraint]"
-          TopLeft="103,47.5">
+          TopLeft="103.25,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2575,18 +2854,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load External Files\Patient Insurer.PrecedenceConstraints[Constraint 1]"
-          TopLeft="103,149.5">
+          TopLeft="103.166666666667,150.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,59.3333333333333"
               Start="0,0"
-              End="0,52.5">
+              End="0,51.8333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,51.8333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2620,7 +2899,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="206,409"
+          PanelSize="206,409.333333333334"
           Size="206,452"
           Id="Package\Load External Files\Patient Insurer"
           TopLeft="615,56.4999999999998" />
@@ -2629,7 +2908,7 @@
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status"
           TopLeft="6.00000000000001,107.5" />
         <NodeLayout
-          Size="117,42"
+          Size="117.333333333334,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Log End"
           TopLeft="49.5,413.5" />
         <NodeLayout
@@ -2637,11 +2916,11 @@
           Id="Package\Load External Files\Patient Suitabillity Status\Log Start"
           TopLeft="47,5.5" />
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Merge to dbo Table"
           TopLeft="22.5,209.5" />
         <NodeLayout
-          Size="205,42"
+          Size="205.333333333334,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Update DWH Dim_Patients"
           TopLeft="5.50000000000004,311.5" />
         <EdgeLayout
@@ -2735,7 +3014,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="216,511"
+          PanelSize="216,510.666666666667"
           Size="216,554"
           Id="Package\Load External Files\Patient Suitabillity Status"
           TopLeft="882,5.49999999999977" />
@@ -2743,7 +3022,7 @@
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="1104,614"
-          Size="1104,657"
+          Size="1104,657.333333333334"
           Id="Package\Load External Files"
           TopLeft="5.50000000000011,313.5" />
         <NodeLayout
@@ -2753,8 +3032,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="197,103"
-          Size="197,146"
+          PanelSize="197.333333333334,102.666666666667"
+          Size="197.333333333334,146"
           Id="Package\Log End of Package"
           TopLeft="459,1030.5" />
         <NodeLayout
@@ -2790,8 +3069,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="165,205"
-          Size="165,248"
+          PanelSize="165.333333333334,205.333333333334"
+          Size="165.333333333334,248"
           Id="Package\Log Start of Package"
           TopLeft="475,5.5" />
         <EdgeLayout
@@ -2845,7 +3124,7 @@
     design-time-name="Package\Load External Files\Dim Pathology Area\Load ext Pathology_Area_Mapping">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="198,42"
           Id="Package\Load External Files\Dim Pathology Area\Load ext Pathology_Area_Mapping\Pathology_Area_Mapping"
@@ -2877,9 +3156,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2901,9 +3178,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2941,20 +3216,20 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="203,42"
+          Size="202.666666666667,42"
           Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\ext Dropped_Out_Patients"
-          TopLeft="5.50000000000003,209.5" />
+          TopLeft="5.50000000000003,312.166666666667" />
         <NodeLayout
-          Size="185,42"
+          Size="185.333333333334,42"
           Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Dropped_Out_Patients"
-          TopLeft="14.5,5.5" />
+          TopLeft="14.1666666666667,5.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Derived Column"
-          TopLeft="30,107.5" />
+          TopLeft="29.8333333333334,210.166666666667" />
         <EdgeLayout
           Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients.Paths[Derived Column Output]"
-          TopLeft="107,149.5">
+          TopLeft="106.833333333333,252.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2971,14 +3246,38 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients\Exclude NULL Rows"
+          TopLeft="20.8333333333333,107.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients.Paths[Excel Source Output]"
+          TopLeft="106.833333333333,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients.Paths[Excel Source Output]"
-          TopLeft="107,47.5">
+          Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients.Paths[Valid Records]"
+          TopLeft="106.833333333333,150.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2996,7 +3295,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-30.70576171875,21.37548828125,61.4115234375,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3033,22 +3332,22 @@
     design-time-name="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="169,42"
+          Size="169.333333333334,42"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer"
-          TopLeft="5.50000000000003,209.5" />
+          TopLeft="6.83333333333336,312.833333333333" />
         <NodeLayout
           Size="154,42"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column"
-          TopLeft="13,107.5" />
+          TopLeft="14.5,210.833333333333" />
         <NodeLayout
-          Size="151,42"
+          Size="152,42.6666666666667"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer"
-          TopLeft="14.5,5.5" />
+          TopLeft="15.5,5.50000000000004" />
         <EdgeLayout
-          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer.Paths[Excel Source Output]"
-          TopLeft="90,47.5">
+          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer.Paths[Derived Column Output]"
+          TopLeft="91.5,252.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3068,9 +3367,35 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Exclude NULL Rows"
+          TopLeft="5.50000000000001,108.166666666667" />
         <EdgeLayout
-          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer.Paths[Derived Column Output]"
-          TopLeft="90,149.5">
+          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer.Paths[Excel Source Output]"
+          TopLeft="91.5,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer.Paths[Valid Records]"
+          TopLeft="91.5,150.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3087,7 +3412,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-30.70576171875,21.37548828125,61.4115234375,9.7490234375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3127,18 +3454,22 @@
         <NodeLayout
           Size="178,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\ext Suitability_Status"
-          TopLeft="17,209.5" />
+          TopLeft="17,311.5" />
         <NodeLayout
-          Size="201,42"
-          Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status"
-          TopLeft="5.50000000000001,5.5" />
+          Size="172,42.6666666666667"
+          Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Exclude NULL Rows"
+          TopLeft="20,107.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Derived Column"
-          TopLeft="29,107.5" />
+          TopLeft="29,209.5" />
+        <NodeLayout
+          Size="201.333333333334,42"
+          Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status"
+          TopLeft="5.5,5.5" />
         <EdgeLayout
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status.Paths[Excel Source Output]"
-          TopLeft="106,47.5">
+          TopLeft="106.083333333333,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3155,14 +3486,12 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status.Paths[Derived Column Output]"
-          TopLeft="106,149.5">
+          TopLeft="106,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3179,8 +3508,30 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status.Paths[Patient_Key not NULL]"
+          TopLeft="106,150.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.3333333333333"
+              Start="0,0"
+              End="0,51.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-48.59193359375,20.2511393229167,97.1838671875,11.3310546875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

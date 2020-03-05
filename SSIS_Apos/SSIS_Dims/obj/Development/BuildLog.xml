@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Dims</Name>
-    <LastWriteTime>2018-09-05T12:00:00.0954921Z</LastWriteTime>
+    <LastWriteTime>2018-10-22T11:38:49.7558558Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Dims.dtsx</Name>
-      <LastWriteTime>2018-09-05T11:21:58.0517705Z</LastWriteTime>
+      <LastWriteTime>2019-06-12T04:23:19.3192982Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

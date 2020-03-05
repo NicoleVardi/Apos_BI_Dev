@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Config_Tables</Name>
-    <LastWriteTime>2018-09-05T11:59:17.3201035Z</LastWriteTime>
+    <LastWriteTime>2018-12-24T16:27:11.4435504Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Config_Tables.dtsx</Name>
-      <LastWriteTime>2018-09-05T10:22:40.1019247Z</LastWriteTime>
+      <LastWriteTime>2018-10-07T13:36:04.2232854Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>External_Config_Files.dtsx</Name>
-      <LastWriteTime>2018-09-05T10:20:50.7033252Z</LastWriteTime>
+      <LastWriteTime>2018-12-24T16:27:05.0703455Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

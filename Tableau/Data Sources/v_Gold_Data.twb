@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20181.18.0615.1128                               -->
-<workbook original-version='18.1' source-build='2018.1.2 (20181.18.0615.1128)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20181.18.0807.1415                               -->
+<workbook original-version='18.1' source-build='2018.1.4 (20181.18.0807.1415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <SortTagCleanup />
   </document-format-change-manifest>
@@ -11,7 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_Gold_Data (DWH)' inline='true' name='federated.0ziy9081tr6l571cwga481pyxztx' version='18.1'>
-      <repository-location id='v_Gold_DataDWH' path='datasources' revision='1.8' />
+      <repository-location id='v_Gold_DataDWH' path='datasources' revision='2.3' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.1skzuop0l1cvri1bwvsyl0zh4t1k'>
@@ -895,7 +895,7 @@
         <folder-item name='Pathology' type='drillpath' />
         <folder-item name='Patient ID' type='drillpath' />
       </folder>
-      <layout dim-ordering='alphabetic' dim-percentage='0.764906' measure-ordering='alphabetic' measure-percentage='0.235094' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.729131' measure-ordering='alphabetic' measure-percentage='0.270869' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

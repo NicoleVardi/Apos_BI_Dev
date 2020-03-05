@@ -4,7 +4,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <ServerName>BISRV-DEV</ServerName>
+        <ServerName>BISRV</ServerName>
         <PathOnServer>/SSISDB/Apos_BI/SSIS_Config_Tables</PathOnServer>
         <Run64BitRuntime>false</Run64BitRuntime>
         <UserIDs />

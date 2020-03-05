@@ -7,12 +7,12 @@
   DTS:CreatorName="APOSTHERAPY\nicole"
   DTS:DTSID="{D1E3EC29-2506-4EBF-B079-98CA14EE3355}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LastModifiedProductVersion="14.0.3002.101"
   DTS:LocaleID="1033"
   DTS:ObjectName="External_Config_Files"
   DTS:PackageType="5"
-  DTS:VersionBuild="44"
-  DTS:VersionGUID="{2EE52188-C0C9-4EC8-A33E-9FD79F7CAD49}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{FC83C775-A67A-456F-8F30-D9B600F1C3C5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Clinic_Branch_Data_Groups">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Clinic_Branch_Data_Groups.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Config_Tables\Clinic_Branch_Data_Groups.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -39,7 +39,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB/iBKgOOZsIHMB6fWeVsYjAAAAAASAAACgAAAAEAAAAApLFq7I60Ri430NpGCoBJsQAAAAAcuR9j6ie7fIl21iibRifBQAAAAFuW5Wsbqt+UqWmQ6m4mZwu/Jt3g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABRSGxFwvitdxkc5eF80F2XAAAAAASAAACgAAAAEAAAAKEjLu2opWO6wYK9ubzLCDEYAAAAA8ilHUscljRZpJiIE7aVBLu4VUmWCsgZFAAAAJmMe/iUrcqFT31z4WVtjN41OGNB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
       DTS:ObjectName="Gait_FC_Grades">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Gait_FC_Grades.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Config_Tables\Gait_FC_Grades.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -60,7 +60,7 @@
       DTS:ObjectName="Gold_Data_Definitions">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Gold_Data_Definitions.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Config_Tables\Gold_Data_Definitions.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -70,7 +70,7 @@
       DTS:ObjectName="Gold_Data_Percent">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Gold_Data_Percent.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Config_Tables\Gold_Data_Percent.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -80,7 +80,7 @@
       DTS:ObjectName="KPI Period Definitions">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\KPI_Period_Definitions.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Config_Tables\KPI_Period_Definitions.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -96,7 +96,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAWK+JM2Nkghjqp87KfAEq+AAAAAASAAACgAAAAEAAAAM61q8odjGQQZO98b4lchQMQAAAAMkDAuZcy9EXkyyZvtIZEvhQAAACcqIsECR+4jYLsc+WSgAZauwxNtw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABgXjplROkYwqryELTQ6YduAAAAAASAAACgAAAAEAAAAPPkKyC/G61Sx2JMpyRCcaQYAAAAJBmrABeW+Z3pPrcRirLJoVQ/RbB9ouMrFAAAAH2jUPFtQBMejn4+GikX3sq7Oa6x</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -107,7 +107,7 @@
       DTS:ObjectName="Traffic_Light_Definitions">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Traffic_Light_Definitions.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Config_Tables\Traffic_Light_Definitions.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -117,7 +117,7 @@
       DTS:ObjectName="Traffic_Light_Weights">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Traffic_Light_Weights.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\External_Files\Config_Tables\Traffic_Light_Weights.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -519,7 +519,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -543,7 +543,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1147,7 +1147,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1171,7 +1171,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1748,7 +1748,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="6">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1772,7 +1772,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="6">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2248,7 +2248,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2272,7 +2272,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2540,6 +2540,12 @@
                               cachedName="Period_Number"
                               externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Number]"
                               lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Number]" />
+                            <inputColumn
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Days_From_IC]"
+                              cachedDataType="r8"
+                              cachedName="Days_From_IC"
+                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Days_from_IC]"
+                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Days_From_IC]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -2583,6 +2589,10 @@
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                               dataType="dbTimeStamp"
                               name="DB_Create_Date" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Days_from_IC]"
+                              dataType="i4"
+                              name="Days_from_IC" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -2740,6 +2750,15 @@
                               lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Year_Name]"
                               name="Year_Name"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Days_From_IC]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Days_From_IC]"
+                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Days_From_IC]"
+                              name="Days_From_IC"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -2779,6 +2798,10 @@
                               dataType="wstr"
                               length="255"
                               name="Year_Name" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Days_From_IC]"
+                              dataType="r8"
+                              name="Days_From_IC" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -2807,6 +2830,11 @@
                               dataType="r8"
                               lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Range_Max_Days]"
                               name="Range_Max_Days" />
+                            <outputColumn
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Days_From_IC]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Days_From_IC]"
+                              name="Days_From_IC" />
                             <outputColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Period_Name]"
                               dataType="wstr"
@@ -2872,7 +2900,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2896,7 +2924,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3583,7 +3611,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="6">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3607,7 +3635,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="6">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4185,7 +4213,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4209,7 +4237,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5348,7 +5376,7 @@
     design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="204,42"
           Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions"
@@ -5380,9 +5408,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5404,16 +5430,14 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions">
+    design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5426,7 +5450,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions">
+    design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

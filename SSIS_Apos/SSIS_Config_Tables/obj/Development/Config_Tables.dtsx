@@ -7,12 +7,12 @@
   DTS:CreatorName="APOSTHERAPY\nicole"
   DTS:DTSID="{F2A97F47-D202-41C5-8E54-21606BEC689E}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LastModifiedProductVersion="14.0.3002.101"
   DTS:LocaleID="1033"
   DTS:ObjectName="Config_Tables"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{0F7430D3-7F10-4C35-9174-AE33C626D59D}">
+  DTS:VersionBuild="77"
+  DTS:VersionGUID="{C3D95D36-4CDB-43DB-A24D-EAC02A7C08E0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         DTS:Name="ConnectionString">@[$Project::DWH]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=BISRV-DEV;User ID=BIAdmin;Initial Catalog=DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=BISRV;User ID=BIAdmin;Initial Catalog=DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAIMFU5HaD+91ASLZuscj7NAAAAAASAAACgAAAAEAAAAE/PVuM7eb+w5T9l+qW3VgYQAAAAWZrIpU8dxmWfiNq38cfmWRQAAABo7+3RlOweY4jqJXagnZmWSEezDQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAArGNr8d0KlJSwVAd4fXvQKAAAAAASAAACgAAAAEAAAACO5SmLqi/bur1ZD+z0LO88YAAAAzW3nIXjSFZZI08eccvxqEWFjIuqOhcA8FAAAADknqMvmbMf2ybmjzAIBWDLSa0E8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +42,11 @@
         DTS:Name="ConnectionString">@[$Project::MRR]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=BISRV-DEV;User ID=BIAdmin;Initial Catalog=MRR;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=BISRV;User ID=BIAdmin;Initial Catalog=MRR;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADaxH8qu45IPQdFcmH/Z7UEAAAAAASAAACgAAAAEAAAAO6xAy6TLMRpUwIGOFaaZlQQAAAAirxgD7lFXZBDWL60pLlrJRQAAACYec2rxG4opB0+X9NiztBqRz/mNg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABZezbitGqFlyDty4syHcLiAAAAAASAAACgAAAAEAAAAKoe9eeFkkxSlXDMrZMsbRgYAAAAI6Q2+57qeC7bXMjaNNg65Kc9i4VIPxXDFAAAAGgoygoiQXSwwFfOj61o4dZWj0Iz</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,11 +59,11 @@
         DTS:Name="ConnectionString">@[$Project::STG]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=BISRV-DEV;User ID=BIAdmin;Initial Catalog=STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=BISRV;User ID=BIAdmin;Initial Catalog=STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADFq8ojp8SNBX6jMFRHgkWIAAAAAASAAACgAAAAEAAAAKEcB5MmafNAUgiuaGDozXwQAAAAk+tMjwgFG02LoAF7c+yNMRQAAABB+jS8vOtKMe1uBlIedeiwU4QLgA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwCRsD+CqjYbm83RFiZ/jYAAAAAASAAACgAAAAEAAAAHcyiHBLWVQylTck4s7t5eMYAAAAA+f/IuzB2gx4P4+Qb3pY5uoRiQkWAgB2FAAAAFHVO86FTYWmKSecfADKh089Icpo</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -76,11 +76,11 @@
         DTS:Name="ConnectionString">@[$Project::STG_ADO]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=BISRV-DEV;User ID=BiAdmin;Initial Catalog=STG;Application Name=SSIS-STG-ADO;">
+          DTS:ConnectionString="Data Source=BISRV;User ID=BiAdmin;Initial Catalog=STG;Application Name=SSIS-STG-ADO;">
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAJqc/qUo/x4F5kI7HWOIItAAAAAASAAACgAAAAEAAAADMU14zKokhqG49m6QRMNHUQAAAAAfLRN00fe8OxAfAMDvY2eRQAAAA+cUgmFDRopHhcFeH+lIxmBDvQkQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADE2TE9tFSY/yI5ZhFpj5CdAAAAAASAAACgAAAAEAAAAL3JcCPieQ3LqFoSiXiNf+UYAAAAgSO+EV/p01H2PemZ+6SZ1n6F0p9L0P+lFAAAAECAFNy2cqTSu/5OBBpISQgmZD/M</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -126,7 +126,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -150,7 +150,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -180,7 +180,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="5">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -590,7 +590,7 @@ FROM ext.Gait_FC_Grades</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -614,7 +614,7 @@ FROM ext.Gait_FC_Grades</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -644,7 +644,7 @@ FROM ext.Gait_FC_Grades</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1093,7 +1093,7 @@ INNER JOIN DWH.dbo.Dim_Questionnaire DQ ON A.Questionnaire_ID = DQ.Questionnaire
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1117,7 +1117,7 @@ INNER JOIN DWH.dbo.Dim_Questionnaire DQ ON A.Questionnaire_ID = DQ.Questionnaire
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1147,7 +1147,7 @@ INNER JOIN DWH.dbo.Dim_Questionnaire DQ ON A.Questionnaire_ID = DQ.Questionnaire
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1916,7 +1916,7 @@ where [refTable].[Questionnaire_ID] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Check Incoming KPI Periods Data"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1948,7 +1948,7 @@ where [refTable].[Questionnaire_ID] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1972,7 +1972,7 @@ where [refTable].[Questionnaire_ID] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2002,7 +2002,7 @@ where [refTable].[Questionnaire_ID] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2410,7 +2410,7 @@ FROM ext.KPI_Period_Definitions</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Log End"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -2434,7 +2434,7 @@ FROM ext.KPI_Period_Definitions</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Log Start"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -2464,12 +2464,12 @@ FROM ext.KPI_Period_Definitions</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Merge DWH"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
                       SQLTask:Connection="{83BB8590-A376-4358-9851-17FEA5DA46AC}"
-                      SQLTask:SqlStatementSource="MERGE dbo.Dim_Period as T &#xA;USING STG.dbo.Dim_Period as S ON T.Period_Name = S.Period_Name&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Period_Number = S.Period_Number,&#xA;&#x9;T.Period_Display_Name = S.Period_Display_Name,&#xA;&#x9;T.Insurer_Group_Key = S.Insurer_Group_Key, &#xA;&#x9;T.Is_Special_Insurer = S.Is_Special_Insurer, &#xA;&#x9;T.Range_Min_Days = S.Range_Min_Days, &#xA;&#x9;T.Range_Max_Days = S.Range_Max_Days,&#xA;&#x9;T.Period_Year_Key = S.Period_Year_Key,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Period_Number, Period_Name, Period_Display_Name, Insurer_Group_Key, Is_Special_Insurer, Range_Min_Days, Range_Max_Days, Period_Year_Key)&#xA;&#x9;VALUES (S.Period_Number, S.Period_Name, S.Period_Display_Name, S.Insurer_Group_Key, S.Is_Special_Insurer, S.Range_Min_Days, S.Range_Max_Days, S.Period_Year_Key);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                      SQLTask:SqlStatementSource="MERGE dbo.Dim_Period as T &#xA;USING STG.dbo.Dim_Period as S ON T.Period_Name = S.Period_Name &#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Period_Number = S.Period_Number,&#xA;&#x9;T.Period_Display_Name = S.Period_Display_Name,&#xA;&#x9;T.Insurer_Group_Key = S.Insurer_Group_Key, &#xA;&#x9;T.Is_Special_Insurer = S.Is_Special_Insurer, &#xA;&#x9;T.Range_Min_Days = S.Range_Min_Days, &#xA;&#x9;T.Range_Max_Days = S.Range_Max_Days,&#xA;&#x9;T.Period_Year_Key = S.Period_Year_Key,&#xA;&#x9;T.Total_Days_from_IC = S.Total_Days_from_IC,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Period_Number, Period_Name, Period_Display_Name, Insurer_Group_Key, Is_Special_Insurer, Range_Min_Days, Range_Max_Days, Total_Days_from_IC, Period_Year_Key)&#xA;&#x9;VALUES (S.Period_Number, S.Period_Name, S.Period_Display_Name, S.Insurer_Group_Key, S.Is_Special_Insurer, S.Range_Min_Days, S.Range_Max_Days, S.Total_Days_from_IC, S.Period_Year_Key);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
                 <DTS:Executable
@@ -2618,6 +2618,7 @@ FROM ext.KPI_Period_Definitions</property>
 	,Range_Min_Days
 	,Range_Max_Days
 	,Year_Number
+	,Days_from_IC as Total_Days_from_IC
 FROM ext.KPI_Period_Definitions</property>
                             <property
                               dataType="System.String"
@@ -2732,6 +2733,15 @@ FROM ext.KPI_Period_Definitions</property>
                                   lineageId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].Columns[Year_Number]"
                                   name="Year_Number"
                                   truncationRowDisposition="FailComponent" />
+                                <outputColumn
+                                  refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].Columns[Total_Days_from_IC]"
+                                  dataType="i4"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].ExternalColumns[Total_Days_from_IC]"
+                                  lineageId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].Columns[Total_Days_from_IC]"
+                                  name="Total_Days_from_IC"
+                                  truncationRowDisposition="FailComponent" />
                               </outputColumns>
                               <externalMetadataColumns
                                 isUsed="True">
@@ -2773,6 +2783,10 @@ FROM ext.KPI_Period_Definitions</property>
                                   refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].ExternalColumns[Year_Number]"
                                   dataType="i4"
                                   name="Year_Number" />
+                                <externalMetadataColumn
+                                  refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].ExternalColumns[Total_Days_from_IC]"
+                                  dataType="i4"
+                                  name="Total_Days_from_IC" />
                               </externalMetadataColumns>
                             </output>
                             <output
@@ -2826,6 +2840,11 @@ FROM ext.KPI_Period_Definitions</property>
                                   dataType="i4"
                                   lineageId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Error Output].Columns[Year_Number]"
                                   name="Year_Number" />
+                                <outputColumn
+                                  refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Error Output].Columns[Total_Days_from_IC]"
+                                  dataType="i4"
+                                  lineageId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Error Output].Columns[Total_Days_from_IC]"
+                                  name="Total_Days_from_IC" />
                                 <outputColumn
                                   refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                                   dataType="i4"
@@ -3060,7 +3079,7 @@ where [refTable].[Period_Year_Number] = ?</property>
                               containsID="true"
                               dataType="System.String"
                               description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                              name="ParameterMap">#{Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\3037:invalid};</property>
+                              name="ParameterMap">#{Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].ExternalColumns[Total_Days_from_IC]};</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3291,6 +3310,12 @@ where [refTable].[Period_Year_Number] = ?</property>
                                   cachedName="Insurer_Group_Key"
                                   externalMetadataColumnId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period.Inputs[OLE DB Destination Input].ExternalColumns[Insurer_Group_Key]"
                                   lineageId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\LKP Insurer_Group_Key.Outputs[Lookup Match Output].Columns[Insurer_Group_Key]" />
+                                <inputColumn
+                                  refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period.Inputs[OLE DB Destination Input].Columns[Total_Days_from_IC]"
+                                  cachedDataType="i4"
+                                  cachedName="Total_Days_from_IC"
+                                  externalMetadataColumnId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period.Inputs[OLE DB Destination Input].ExternalColumns[Total_Days_from_IC]"
+                                  lineageId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions.Outputs[OLE DB Source Output].Columns[Total_Days_from_IC]" />
                               </inputColumns>
                               <externalMetadataColumns
                                 isUsed="True">
@@ -3334,6 +3359,10 @@ where [refTable].[Period_Year_Number] = ?</property>
                                   refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                                   dataType="dbTimeStamp"
                                   name="DB_Create_Date" />
+                                <externalMetadataColumn
+                                  refId="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period.Inputs[OLE DB Destination Input].ExternalColumns[Total_Days_from_IC]"
+                                  dataType="i4"
+                                  name="Total_Days_from_IC" />
                               </externalMetadataColumns>
                             </input>
                           </inputs>
@@ -3435,7 +3464,7 @@ where [refTable].[Period_Year_Number] = ?</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Log End"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -3459,7 +3488,7 @@ where [refTable].[Period_Year_Number] = ?</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Log Start"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -3489,7 +3518,7 @@ where [refTable].[Period_Year_Number] = ?</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Merge DWH"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -4083,7 +4112,7 @@ FROM ext.KPI_Period_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4107,7 +4136,7 @@ FROM ext.KPI_Period_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4137,7 +4166,7 @@ FROM ext.KPI_Period_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4563,7 +4592,7 @@ FROM ext.Traffic_Light_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4587,7 +4616,7 @@ FROM ext.Traffic_Light_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4617,7 +4646,7 @@ FROM ext.Traffic_Light_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5172,7 +5201,7 @@ where [refTable].[Questionnaire] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Traffic Light\Traffic Light Score\stg Dim_Traffic_Light_Score\3038:invalid};</property>
+                          name="ParameterMap">#{Package\Traffic Light\Traffic Light Score\stg Dim_Traffic_Light_Score\1246:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5554,7 +5583,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5578,7 +5607,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5608,7 +5637,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5960,7 +5989,7 @@ where [refTable].[Questionnaire] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Traffic Light\Traffic Light Weights\stg Dim_Traffic_Light_Weights\3039:invalid};</property>
+                          name="ParameterMap">#{Package\Traffic Light\Traffic Light Weights\stg Dim_Traffic_Light_Weights\1247:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7736,21 +7765,21 @@ where [refTable].[Questionnaire] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="201,42"
-          Id="Package\Gold Data\Gold Data Items\stg Dim_Gold_Data_Items\ext Gold_Data_Definitions"
-          TopLeft="6.5,5.5" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Gold Data\Gold Data Items\stg Dim_Gold_Data_Items\LKP Questionnaire_Key"
-          TopLeft="13,107.5" />
-        <NodeLayout
           Size="203,42"
           Id="Package\Gold Data\Gold Data Items\stg Dim_Gold_Data_Items\stg Dim_Gold_Data_Items"
           TopLeft="5.50000000000003,311.5" />
         <NodeLayout
+          Size="201,42"
+          Id="Package\Gold Data\Gold Data Items\stg Dim_Gold_Data_Items\ext Gold_Data_Definitions"
+          TopLeft="6.5,5.5" />
+        <NodeLayout
           Size="154,42"
           Id="Package\Gold Data\Gold Data Items\stg Dim_Gold_Data_Items\Derived Column"
           TopLeft="30,209.5" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Gold Data\Gold Data Items\stg Dim_Gold_Data_Items\LKP Questionnaire_Key"
+          TopLeft="13,107.5" />
         <EdgeLayout
           Id="Package\Gold Data\Gold Data Items\stg Dim_Gold_Data_Items.Paths[OLE DB Source Output]"
           TopLeft="107,47.5">
@@ -7770,7 +7799,9 @@ where [refTable].[Questionnaire] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7816,7 +7847,9 @@ where [refTable].[Questionnaire] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7965,69 +7998,21 @@ where [refTable].[Questionnaire] = ?</property>
           Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\ext KPI_Period_Definitions"
           TopLeft="5.5,5.5" />
         <NodeLayout
-          Size="191,42"
-          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\LKP Insurer_Group_Key"
-          TopLeft="12,107.5" />
-        <NodeLayout
           Size="179,42"
           Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\LKP Period_Year_Key"
           TopLeft="18,209.5" />
         <NodeLayout
-          Size="154,42"
-          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\Derived Column"
-          TopLeft="30.5,311.5" />
+          Size="191,42"
+          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\LKP Insurer_Group_Key"
+          TopLeft="12,107.5" />
         <NodeLayout
           Size="150,42"
           Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period"
           TopLeft="32.5,413.5" />
-        <EdgeLayout
-          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period.Paths[Lookup Match Output]"
-          TopLeft="107.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period.Paths[Derived Column Output]"
-          TopLeft="107.5,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="154,42"
+          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\Derived Column"
+          TopLeft="30.5,311.5" />
         <EdgeLayout
           Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period.Paths[OLE DB Source Output]"
           TopLeft="107.5,47.5">
@@ -8076,22 +8061,57 @@ where [refTable].[Questionnaire] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period.Paths[Lookup Match Output]"
+          TopLeft="107.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period.Paths[Derived Column Output]"
+          TopLeft="107.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\LKP Insurer_Group_Key">
     <Properties>
@@ -8135,6 +8155,19 @@ where [refTable].[Questionnaire] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\KPI Periods Tables\KPI Period Definitions\Period\stg Dim_Period\stg Dim_Period">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20181.18.0615.1128                               -->
-<workbook original-version='18.1' source-build='2018.1.2 (20181.18.0615.1128)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20181.18.0807.1415                               -->
+<workbook original-version='18.1' source-build='2018.1.4 (20181.18.0807.1415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <SortTagCleanup />
   </document-format-change-manifest>
@@ -11,7 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_CIO_Clinical_KPIs (DWH)' inline='true' name='federated.1ey8tjw0gjs6jr191dt8r0wm7k8f' version='18.1'>
-      <repository-location id='v_CIO_Clinical_KPIsDWH' path='datasources' revision='3.2' />
+      <repository-location id='v_CIO_Clinical_KPIsDWH' path='datasources' revision='3.6' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.104pqln0vl8pcx1048uwa1x5bmoo'>
@@ -1102,8 +1102,8 @@
         <folder-item name='[Period_Year_Number]' type='field' />
         <folder-item name='Period' type='drillpath' />
       </folder>
-      <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_Clinical_KPIs (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2018 11:47:19 AM' username='tableau_internal_user'>
+      <extract count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI_Dev/Tableau/Data Sources/v_CIO_Clinical_KPIs (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2018 11:47:19 AM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
             <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='1006882' timestamp-start='2018-08-15 11:47:19.500' />
@@ -1604,7 +1604,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.68262' measure-ordering='alphabetic' measure-percentage='0.31738' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.683879' measure-ordering='alphabetic' measure-percentage='0.316121' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

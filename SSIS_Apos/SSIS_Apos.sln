@@ -15,6 +15,10 @@ Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Facts", "SSIS_Facts\SS
 EndProject
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Reports", "SSIS_Reports\SSIS_Reports.dtproj", "{945669CF-DCC3-4906-A964-DB7E35BA25A5}"
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Priority_Files", "SSIS_Priority_Files\SSIS_Priority_Files.dtproj", "{42004EC1-3E16-4B5A-BCF4-5AAF31278395}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Clinical_Files", "SSIS_Clinical_Files\SSIS_Clinical_Files.dtproj", "{B6A16461-BB3C-4C12-8BCF-99185A5AC2F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -32,6 +36,10 @@ Global
 		{4E2B8065-4A62-4F24-8472-0BE6949628CF}.Development|Default.Build.0 = Development
 		{945669CF-DCC3-4906-A964-DB7E35BA25A5}.Development|Default.ActiveCfg = Development
 		{945669CF-DCC3-4906-A964-DB7E35BA25A5}.Development|Default.Build.0 = Development
+		{42004EC1-3E16-4B5A-BCF4-5AAF31278395}.Development|Default.ActiveCfg = Development
+		{42004EC1-3E16-4B5A-BCF4-5AAF31278395}.Development|Default.Build.0 = Development
+		{B6A16461-BB3C-4C12-8BCF-99185A5AC2F0}.Development|Default.ActiveCfg = Development
+		{B6A16461-BB3C-4C12-8BCF-99185A5AC2F0}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

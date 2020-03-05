@@ -2,13 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Reports</Name>
-    <LastWriteTime>2018-09-05T12:03:30.3631746Z</LastWriteTime>
+    <LastWriteTime>2019-01-29T11:38:31.8319646Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Reports.dtsx</Name>
-      <LastWriteTime>2018-09-05T12:02:37.9881307Z</LastWriteTime>
+      <LastWriteTime>2019-01-29T11:38:50.4266525Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Reports_CTS_Logic.dtsx</Name>
+      <LastWriteTime>2019-05-07T07:16:49.2335049Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

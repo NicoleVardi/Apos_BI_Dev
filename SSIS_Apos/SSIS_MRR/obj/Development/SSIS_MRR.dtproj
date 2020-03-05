@@ -16,17 +16,17 @@
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{e568df74-25b3-4774-93b2-d7858286ec0b}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">SSIS_MRR</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
           </SSIS:Property>
           <SSIS:Property SSIS:Name="CreationDate">2018-06-23T14:13:49.2561319+01:00</SSIS:Property>
           <SSIS:Property SSIS:Name="CreatorName">APOSTHERAPY\nicole</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorComputerName">BISRV-DEV</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorComputerName">BISRV</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk2EvqtcRrEaau0+zA+GGiAAAAAACAAAAAAADZgAAwAAAABAAAAChDRwi1u1Vpkg/ZtFDop5zAAAAAASAAACgAAAAEAAAAHlJ8tjc6GSgDZz4loYXn6WIAAAAfAQuLHUhb9xUdK215j1QUwwEX1cQRCHjfoeUs+OEcEVseOqNQDTUY7lOZkLOu7LBEBuMd9uUJckhLx5d7ysKlYDmht6mxsGBy1Rif3VhyNDLGjLtwNM70H9sxg7rJwhON8l3eTbnFAtqNG5wcB6ST+VUxMM0mRHqUh/fC05hedP1eyqwuC4oZhQAAACMDRXmXenTXhemJkM+4xnbnwTUFw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxELqpP2bnkS9OMCYOJ4WHgAAAAACAAAAAAADZgAAwAAAABAAAADtWHqA+7rCTa1vgJftl7N6AAAAAASAAACgAAAAEAAAAElIktHKq48AknPPcF2YOPeIAAAAXqxSDkvAQsR9NbrlzZiTOdY6VVEvwdxPG+D5OxHcDeTmK+oDyz1cvOW64vNsNjD6SlSXIU1y59m/zg/ZTUXdK2jTFNQqEwpOPYDeE81pojm+uvxWtl+IeWYeU0I6tZjP3tkEgCrlQpiXvrqi+x7pHTmRHDJ4hynpIHej6XWn43rQ1gAm+nKFuRQAAACl4eHSrv34FTRy+7x50d3EJGEbVA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">MRR</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">118</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">119</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6C3D2B69-8E24-45FE-9293-F12C24E92C63}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E4D2B63C-ADF8-4AB3-BFCC-A609B358EE0D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
